@@ -1,5 +1,5 @@
 function login() {
-    document.location.href = "C:/Users/Pichau/Desktop/FrontEnd Projeto Integrador/src/salas.html";
+    document.location.href = "salas.html";
 }
 
 function mute() {
