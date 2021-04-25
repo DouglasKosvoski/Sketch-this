@@ -1,0 +1,20 @@
+<svg width="522" height="189" viewBox="0 0 522 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Teste">
+<g id="Rectangle 1" filter="url(#filter0_d)">
+<rect x="13" y="9.58228" width="495.018" height="162.418" rx="81.2089" fill="#010F14"/>
+<rect x="8.5" y="5.08228" width="504.018" height="171.418" rx="85.7089" stroke="#37595E" stroke-width="9" stroke-linejoin="bevel"/>
+</g>
+<text id="Bisbilhotar" fill="white" stroke="white" xml:space="preserve" style="white-space: pre" font-family="Sarabun" font-size="54" font-weight="800" letter-spacing="0em"><tspan x="125.183" y="113.363">Bisbilhotar</tspan></text>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0.582275" width="521.018" height="188.418" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
