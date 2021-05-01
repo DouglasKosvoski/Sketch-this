@@ -14,55 +14,55 @@ p {
   z-index     : 1;
   display     : flex;
   position    : absolute;
-  top         : 100px;
-  left        : 660px;
-  width       : 600px;
-  height      : 200px;
+  top         : 15%;
+  left        : 50%;
+  height      : 18%;
   color       : #FFFFFF;
   text-align  : center;
   font-family : Sarabun;
-  font-size   : 54px;
+  font-size   : min(10vw, 40px);
   font-style  : normal;
   font-weight : 800;
-  line-height : 83px;
+  transform   : translate(-50%, 0%);
 }
 
 footer {
   position      : fixed;
   bottom        : 0;
   left          : 0px;
-  width         : 490px;
-  height        : 85px;
+  width         : 30%;
+  height        : 10%;
   color         : white;
   border-radius : 0 50px 0 0;
   background    : #010F14;
   text-align    : center;
   font-family   : 'Sarabun',
                   sans-serif;
-  font-size     : 54px;
+  font-size     : max(3vw, 18px);
   font-style    : normal;
   font-weight   : 800;
 }
 
 #intro {
-  display     : block;
-  position    : fixed;
-  top         : 253px;
-  left        : 442px;
-  width       : 518px;
-  height      : 621px;
+  width       : 35%;
+  float       : left;
+  margin-top  : 3%;
+  margin-left : 18%;
   color       : #FFFFFF;
   text-align  : center;
   align-items : center;
   font-family : 'Sarabun',
                 sans-serif;
-  font-size   : 54px;
+  font-size   : min(5vw, 56px);
   font-style  : normal;
   font-weight : 800;
 }
 
+#top {
+  width : 100%;
+}
+
 #logotipo {
-  position      : static;
   height        : 1.5em;
   color         : #FFFFFF;
   border-radius : 0 0px 65px 65px;
@@ -70,7 +70,7 @@ footer {
   text-align    : center;
   align-items   : center;
   font-family   : Lobster;
-  font-size     : 64px;
+  font-size     : max(5vw, 23px);
 }
 
 #dec1 {
@@ -87,18 +87,21 @@ footer {
   left     : 0;
 }
 
-#dec3 {
-  position : fixed;
-  top      : 0;
-  left     : 0;
+#btnInicio {
+  display      : block;
+  position     : relative;
+  width        : 25%;
+  float        : right;
+  margin-right : 5.5em;
+  list-style   : none;
+}
+
+li {
+  margin-top : 10%;
 }
 
 #login {
-  position : absolute;
-  top      : 200px;
-  left     : 1115px;
-  width    : 495px;
-  height   : 165px;
+  width : 100%;
 }
 
 #login:hover {
@@ -106,11 +109,7 @@ footer {
 }
 
 #cadastro {
-  position : absolute;
-  top      : 400px;
-  left     : 1115px;
-  width    : 495px;
-  height   : 165px;
+  width : 100%;
 }
 
 #cadastro:hover {
@@ -118,11 +117,7 @@ footer {
 }
 
 #teste {
-  position : absolute;
-  top      : 600px;
-  left     : 1115px;
-  width    : 495.02px;
-  height   : 165px;
+  width : 100%;
 }
 
 #teste:hover {
@@ -138,13 +133,28 @@ footer {
   font-weight     : 800;
 }
 
+#voltarLogin {
+  z-index   : 1;
+  position  : fixed;
+  top       : 35px;
+  left      : 35px;
+  width     : 50%;
+  min-width : 200;
+  height    : 105px;
+}
+
+#voltarLogin:hover {
+  animation : jello-horizontal 0.9s both;
+}
+
 #voltar {
-  z-index  : 1;
-  position : fixed;
-  top      : 35px;
-  left     : 35px;
-  width    : 314px;
-  height   : 105px;
+  z-index   : 1;
+  position  : fixed;
+  top       : 35px;
+  left      : 35px;
+  width     : 25%;
+  min-width : 200;
+  height    : 105px;
 }
 
 #voltar:hover {
@@ -213,12 +223,6 @@ footer {
   grid-area   : denunc;
 }
 
-/**
- * <div id="avatar"><img src="../img/avatar.png"></div> <div
- * id="perfil-nome">Douchebag</div> <div id="perfil-elogio">Elogiar</div> <div
- * id="perfil-denuncia">Denunciar</div>
- */
-
 /* campo de texto do usuário, ele escreve a mensagem aqui */
 
 #mensagem {
@@ -258,10 +262,13 @@ footer {
 }
 
 .entrada {
+  z-index    : 1;
   position   : fixed;
+  top        : 70%;
   right      : 0;
   bottom     : 10em;
   width      : 60%;
+  border-top : #010F14 10px solid;
   text-align : right;
 }
 
@@ -330,11 +337,17 @@ footer {
   background : #071E21;
 }
 
+.telaLogin {
+  background-image  : url("../img/Decoração.svg");
+  background-repeat : no-repeat;
+  background-size   : cover;
+}
+
 .entrar {
   z-index          : 1;
   position         : absolute;
-  bottom           : 200px;
-  left             : 800;
+  bottom           : 10%;
+  left             : 50%;
   width            : 315px;
   height           : 100px;
   color            : white;
@@ -346,19 +359,17 @@ footer {
                      sans-serif;
   font-size        : 48px;
   font-weight      : 800;
-}
-
-.entrar:hover {
-  animation : jello-horizontal 0.9s both;
+  transform        : translate(-50%, -50%);
 }
 
 .campo-email {
   z-index          : 1;
   position         : absolute;
-  top              : 400px;
-  left             : 661px;
-  width            : 598px;
-  height           : 75px;
+  top              : 50%;
+  left             : 50%;
+  width            : 30%;
+  min-width        : 300px;
+  height           : 8%;
   color            : #010F14;
   border           : 6px solid #37595E;
   border-radius    : 90px;
@@ -368,6 +379,7 @@ footer {
                      sans-serif;
   font-size        : 34px;
   font-weight      : 800;
+  transform        : translate(-50%, -50%);
 }
 
 .campo-email:focus {
@@ -377,10 +389,11 @@ footer {
 .campo-senha {
   z-index       : 1;
   position      : absolute;
-  top           : 520px;
-  left          : 660px;
-  width         : 598px;
-  height        : 75px;
+  top           : 60%;
+  left          : 50%;
+  width         : 30%;
+  min-width     : 300px;
+  height        : 8%;
   color         : #010F14;
   border        : 6px solid #37595E;
   border-radius : 90px;
@@ -390,6 +403,7 @@ footer {
                   sans-serif;
   font-size     : 34px;
   font-weight   : 800;
+  transform     : translate(-50%, -50%);
 }
 
 .campo-senha:focus {
@@ -406,6 +420,13 @@ footer {
   animation : jello-horizontal 0.9s both;
 }
 
+.cortina {
+  display          : none;
+  width            : 100%;
+  height           : 10%;
+  background-color : #071E21;
+}
+
 .wrapper {
   display    : block;
   margin     : 10% 0 0 30%;
@@ -420,9 +441,8 @@ footer {
 .sala {
   z-index               : 1;
   display               : grid;
-  width                 : 1200px;
-  height                : 175px;
-  margin                : 0 0 40px 0;
+  height                : 20%;
+  margin                : 0 0 0.5em 0;
   border                : 6px solid #37595E;
   border-radius         : 90px;
   background            : #010F14;
@@ -432,7 +452,6 @@ footer {
 
 .tema {
   display           : flex;
-  width             : 450px;
   color             : white;
   border            : 6px solid #37595E;
   border-radius     : 80px;
@@ -449,15 +468,13 @@ footer {
 
 .desc {
   display         : flex;
-  width           : 400px;
-  height          : 160px;
   padding-left    : 15px;
   color           : white;
   text-align      : center;
   align-items     : center;
   font-family     : 'Sarabun',
                     sans-serif;
-  font-size       : 24px;
+  font-size       : 1.25vw;
   font-weight     : 800;
   justify-content : center;
   grid-area       : desc;
@@ -474,6 +491,141 @@ footer {
   font-weight     : 800;
   justify-content : center;
   grid-area       : online;
+}
+
+@media
+  only screen
+  and (max-width : 1000px) {
+  .cortina {
+    z-index          : 0;
+    display          : block;
+    position         : fixed;
+    top              : 0;
+    width            : 100%;
+    height           : 150px;
+    background-color : #010F14;
+  }
+  
+  .mute {
+    z-index  : 1;
+    position : fixed;
+    top      : 49px;
+    left     : 75%;
+    width    : 72px;
+  }
+  
+  .wrapper {
+    margin : 200px 0 0 0;
+  }
+  
+  .tema {
+    font-size : 6vw;
+  }
+  
+  .desc {
+    font-size : min(3.5vw, 20px);
+  }
+  
+  .online {
+    font-size : 2vw;
+  }
+  
+  #exemploSala {
+    text-decoration : none;
+    font-size       : 6vw;
+  }
+  
+  #intro {
+    display     : block;
+    margin-left : 50%;
+    transform   : translate(-50%, -0%);
+  }
+  
+  #btnInicio {
+    width       : 125;
+    float       : left;
+    margin-top  : 15%;
+    margin-left : 50%;
+    list-style  : none;
+    transform   : translate(-50%, -0%);
+  }
+  
+  li {
+    margin-top : 10%;
+  }
+  
+  #login {
+    width : 100%;
+  }
+  
+  #cadastro {
+    width : 100%;
+  }
+  
+  #teste {
+    width : 100%;
+  }
+  
+  .mensagens {
+    z-index  : 0;
+    display  : block;
+    position : absolute;
+    top      : 22%;
+    right    : 0;
+    width    : 100%;
+    height   : 69%;
+  }
+  
+  .enviado {
+    margin-left : 40%;
+    padding     : 10px 0 10px 0;
+  }
+  
+  .entrada {
+    position   : fixed;
+    top        : 90%;
+    bottom     : 0;
+    width      : 100%;
+    text-align : right;
+  }
+  
+  .conversaEnv {
+    font-size : 18px;
+  }
+  
+  .conversaRec {
+    font-size : 18px;
+  }
+  
+  #mensagem {
+    width            : 100%;
+    height           : 55px;
+    color            : white;
+    border-radius    : 0 0 0 0;
+    background-color : #37595E;
+    outline          : none;
+    text-align       : right;
+    font-size        : 24px;
+  }
+  
+  #popup {
+    z-index          : 1;
+    display          : none;
+    position         : absolute;
+    top              : 50%;
+    left             : 50%;
+    width            : 50%;
+    height           : 15%;
+    border           : 15px #010F14 solid;
+    border-radius    : 90px;
+    background-color : #071E21;
+    transform        : translate(-50%, -50%);
+  }
+  
+  .popUp {
+    margin-left : 0;
+    align-items : center;
+  }
 }
 
 @keyframes jello-horizontal {

@@ -4,10 +4,10 @@
   <header>
     <a href="index.php"><img src="../img/Sair.svg" id="voltar"></a>
     <img src="../img/Mute.svg" onclick="mute()" class="mute">
+    <div class="cortina"></div>
   </header>
 
   <div class="wrapper">
-
     <div class="sala">
       <div class="tema">
         <a href="chat.php" id="exemploSala">Aleatório</a>
