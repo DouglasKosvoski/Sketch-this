@@ -1,3 +1,3 @@
 <footer>
-  <p>Termos de uso</p>
+  Termos de uso
 </footer>

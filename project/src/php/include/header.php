@@ -9,5 +9,5 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sarabun&display=swap" rel="stylesheet">
 
-    <script src="./js/javascript.js"></script>
+    <script src="./js/app.js"></script>
 </head>

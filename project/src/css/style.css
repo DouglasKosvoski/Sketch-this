@@ -1,492 +1,507 @@
 * {
-    font-family: 'Lobster', cursive;
-    font-family: 'Sarabun', sans-serif;
+  font-family : 'Lobster',
+                cursive;
+  font-family : 'Sarabun',
+                sans-serif;
 }
 
 body {
-    background: #010F14;
-    margin: 0;
+  margin     : 0;
+  background : #010F14;
 }
 
 p {
-    position: absolute;
-    width: 600px;
-    height: 200px;
-    left: 660px;
-    top: 100px;
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 54px;
-    line-height: 83px;
-    display: flex;
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 1;
+  z-index     : 1;
+  display     : flex;
+  position    : absolute;
+  top         : 100px;
+  left        : 660px;
+  width       : 600px;
+  height      : 200px;
+  color       : #FFFFFF;
+  text-align  : center;
+  font-family : Sarabun;
+  font-size   : 54px;
+  font-style  : normal;
+  font-weight : 800;
+  line-height : 83px;
 }
 
 footer {
-    position: fixed;
-    width: 490px;
-    height: 85px;
-    border-radius: 0 50px 0 0;
-    left: 0px;
-    bottom: 0;
-    background: #010F14;
-    font-family: 'Sarabun', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 54px;
-    text-align: center;
-    color: white;
+  position      : fixed;
+  bottom        : 0;
+  left          : 0px;
+  width         : 490px;
+  height        : 85px;
+  color         : white;
+  border-radius : 0 50px 0 0;
+  background    : #010F14;
+  text-align    : center;
+  font-family   : 'Sarabun',
+                  sans-serif;
+  font-size     : 54px;
+  font-style    : normal;
+  font-weight   : 800;
 }
 
 #intro {
-    position: fixed;
-    width: 518px;
-    height: 621px;
-    display: block;
-    left: 442px;
-    top: 253px;
-    font-family: 'Sarabun', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 54px;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
+  display     : block;
+  position    : fixed;
+  top         : 253px;
+  left        : 442px;
+  width       : 518px;
+  height      : 621px;
+  color       : #FFFFFF;
+  text-align  : center;
+  align-items : center;
+  font-family : 'Sarabun',
+                sans-serif;
+  font-size   : 54px;
+  font-style  : normal;
+  font-weight : 800;
 }
 
 #logotipo {
-    position: static;
-    font-family: Lobster;
-    font-size: 64px;
-    height: 1.5em;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    background: #010F14;
-    border-radius: 0 0px 65px 65px;
+  position      : static;
+  height        : 1.5em;
+  color         : #FFFFFF;
+  border-radius : 0 0px 65px 65px;
+  background    : #010F14;
+  text-align    : center;
+  align-items   : center;
+  font-family   : Lobster;
+  font-size     : 64px;
 }
 
 #dec1 {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+  z-index  : -1;
+  position : fixed;
+  right    : 0;
+  bottom   : 0;
 }
 
 #dec2 {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
+  z-index  : -1;
+  position : fixed;
+  bottom   : 0;
+  left     : 0;
 }
 
 #dec3 {
-    position: fixed;
-    left: 0;
-    top: 0;
+  position : fixed;
+  top      : 0;
+  left     : 0;
 }
 
 #login {
-    position: absolute;
-    width: 495px;
-    height: 165px;
-    left: 1115px;
-    top: 200px;
+  position : absolute;
+  top      : 200px;
+  left     : 1115px;
+  width    : 495px;
+  height   : 165px;
 }
 
 #login:hover {
-    animation: jello-horizontal 0.9s both;
+  animation : jello-horizontal 0.9s both;
 }
 
 #cadastro {
-    position: absolute;
-    width: 495px;
-    height: 165px;
-    left: 1115px;
-    top: 400px;
+  position : absolute;
+  top      : 400px;
+  left     : 1115px;
+  width    : 495px;
+  height   : 165px;
 }
 
 #cadastro:hover {
-    animation: jello-horizontal 0.9s both;
+  animation : jello-horizontal 0.9s both;
 }
 
 #teste {
-    position: absolute;
-    width: 495.02px;
-    height: 165px;
-    left: 1115px;
-    top: 600px;
+  position : absolute;
+  top      : 600px;
+  left     : 1115px;
+  width    : 495.02px;
+  height   : 165px;
 }
 
 #teste:hover {
-    animation: jello-horizontal 0.9s both;
+  animation : jello-horizontal 0.9s both;
 }
 
 #exemploSala {
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 54px;
-    text-decoration: none;
+  color           : white;
+  text-decoration : none;
+  font-family     : 'Sarabun',
+                    sans-serif;
+  font-size       : 54px;
+  font-weight     : 800;
 }
 
 #voltar {
-    position: fixed;
-    width: 314px;
-    height: 105px;
-    left: 35px;
-    top: 35px;
-    z-index: 1;
+  z-index  : 1;
+  position : fixed;
+  top      : 35px;
+  left     : 35px;
+  width    : 314px;
+  height   : 105px;
 }
 
 #voltar:hover {
-    animation: jello-horizontal 0.9s both;
+  animation : jello-horizontal 0.9s both;
 }
 
-/*Esconde o botão de enviar no chat #habilitar com mediaquery*/
+/* Esconde o botão de enviar no chat #habilitar com mediaquery */
 
 #submitmsg {
-    display: none;
+  display : none;
 }
 
 #popup {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    height: 15%;
-    border-radius: 90px;
-    background-color: #071E21;
-    border: 15px #37595E solid;
+  z-index          : 1;
+  display          : none;
+  position         : absolute;
+  top              : 50%;
+  left             : 50%;
+  width            : 30%;
+  height           : 15%;
+  border           : 15px #37595E solid;
+  border-radius    : 90px;
+  background-color : #071E21;
+  transform        : translate(-50%, -50%);
 }
 
-.popUp{
-    margin-left: 33%;
-    align-items: center;
-    row-gap: 10px;
-    column-gap: 10px;
-    display: grid;
-    grid-template: "1fr 2fr" "1fr 1fr";
-    grid-template-areas: "avatar nome" "elogio denunc";
+.popUp {
+  margin-left : 33%;
+  align-items : center;
 }
 
 #avatar {
-    grid-area: avatar;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
+  width         : 35px;
+  height        : 35px;
+  border-radius : 50%;
+  grid-area     : avatar;
 }
 
-#perfil-nome{
-    grid-area: nome;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 24px;
-    text-align: center;
-    color: white;
+#perfil-nome {
+  color       : white;
+  text-align  : center;
+  font-family : 'Sarabun',
+                sans-serif;
+  font-size   : 24px;
+  font-weight : 800;
+  grid-area   : nome;
 }
 
-#perfil-elogio{
-    grid-area: elogio;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center;
-    color: green;
-
+#perfil-elogio {
+  color       : green;
+  text-align  : center;
+  font-family : 'Sarabun',
+                sans-serif;
+  font-size   : 20px;
+  font-weight : 800;
+  grid-area   : elogio;
 }
 
-#perfil-denuncia{
-    grid-area: denunc;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center;
-    color: tomato;
+#perfil-denuncia {
+  color       : tomato;
+  text-align  : center;
+  font-family : 'Sarabun',
+                sans-serif;
+  font-size   : 20px;
+  font-weight : 800;
+  grid-area   : denunc;
 }
 
+/**
+ * <div id="avatar"><img src="../img/avatar.png"></div> <div
+ * id="perfil-nome">Douchebag</div> <div id="perfil-elogio">Elogiar</div> <div
+ * id="perfil-denuncia">Denunciar</div>
+ */
 
-
-
-
-/*          <div id="avatar"><img src="../img/avatar.png"></div>
-            <div id="perfil-nome">Douchebag</div>
-            <div id="perfil-elogio">Elogiar</div>
-            <div id="perfil-denuncia">Denunciar</div>*/
-
-/*campo de texto do usuário, ele escreve a mensagem aqui*/
+/* campo de texto do usuário, ele escreve a mensagem aqui */
 
 #mensagem {
-    width: 100%;
-    border-radius: 0 0 0 50px;
-    border: 0;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    height: 82px;
-    font-size: 40px;
-    text-align: right;
-    color: white;
-    background-color: #37595E;
-    outline: none;
+  width            : 100%;
+  height           : 82px;
+  color            : white;
+  border           : 0;
+  border-radius    : 0 0 0 50px;
+  background-color : #37595E;
+  outline          : none;
+  text-align       : right;
+  font-family      : 'Sarabun',
+                     sans-serif;
+  font-size        : 40px;
+  font-weight      : 800;
 }
 
-/*ao clicar no campo, o tamanho da fonte diminui*/
+/* ao clicar no campo, o tamanho da fonte diminui */
 
 #mensagem:focus {
-    height: 82px;
-    color: white;
-    font-size: 30px;
+  height    : 82px;
+  color     : white;
+  font-size : 30px;
 }
 
 #salas {
-    overflow-y: scroll;
-    overflow-x: scroll;
+  overflow-x : scroll;
+  overflow-y : scroll;
 }
 
 #salas::-webkit-scrollbar {
-    display: none;
+  display : none;
 }
 
 #mensagem::placeholder {
-    color: white;
+  color : white;
 }
 
 .entrada {
-    position: fixed;
-    right: 0;
-    bottom: 10em;
-    width: 60%;
-    text-align: right;
+  position   : fixed;
+  right      : 0;
+  bottom     : 10em;
+  width      : 60%;
+  text-align : right;
 }
 
 .mensagens {
-    display: block;
-    position: absolute;
-    height: 70%;
-    width: 60%;
-    top: 0;
-    right: 0;
-    text-align: right;
-    background-color: #37595E;
-    overflow-x: scroll;
+  display          : block;
+  position         : absolute;
+  top              : 0;
+  right            : 0;
+  width            : 60%;
+  height           : 70%;
+  overflow-x       : scroll;
+  background-color : #37595E;
+  text-align       : right;
 }
 
-/*esconde a barra de rolagem*/
+/* esconde a barra de rolagem */
 
 .mensagens::-webkit-scrollbar {
-    display: none;
+  display : none;
 }
 
 .recebido {
-    text-align: left;
-    color: black;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    margin-left: 10px;
-    padding: 10px 0 10px 0;
+  margin-left : 10px;
+  padding     : 10px 0 10px 0;
+  color       : black;
+  text-align  : left;
+  font-family : 'Sarabun',
+                sans-serif;
+  font-size   : 20px;
+  font-weight : 800;
 }
 
 .conversaRec {
-    width: 35%;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: left;
-    color: white;
-    border-radius: 80px;
-    border: 6px solid #010F14;
-    padding: 15px;
+  width         : 35%;
+  padding       : 15px;
+  color         : white;
+  border        : 6px solid #010F14;
+  border-radius : 80px;
+  text-align    : left;
+  font-family   : 'Sarabun',
+                  sans-serif;
+  font-size     : 20px;
+  font-weight   : 800;
 }
 
 .enviado {
-    margin-left: 60%;
-    padding: 10px 0 10px 0;
+  margin-left : 60%;
+  padding     : 10px 0 10px 0;
 }
 
 .conversaEnv {
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    color: white;
-    border-radius: 80px;
-    border: 6px solid #010F14;
-    padding: 15px;
-    margin-right: 10px;
+  margin-right  : 10px;
+  padding       : 15px;
+  color         : white;
+  border        : 6px solid #010F14;
+  border-radius : 80px;
+  font-family   : 'Sarabun',
+                  sans-serif;
+  font-size     : 20px;
+  font-weight   : 800;
 }
 
-/*background da tela inicial, que é mais clara que as outras*/
+/* background da tela inicial, que é mais clara que as outras */
 
 .inicial {
-    background: #071E21;
+  background : #071E21;
 }
 
 .entrar {
-    position: absolute;
-    width: 315px;
-    height: 100px;
-    left: 800;
-    bottom: 200px;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 48px;
-    background-color: #010F14;
-    border-radius: 90px;
-    border: 6px solid #37595E;
+  z-index          : 1;
+  position         : absolute;
+  bottom           : 200px;
+  left             : 800;
+  width            : 315px;
+  height           : 100px;
+  color            : white;
+  border           : 6px solid #37595E;
+  border-radius    : 90px;
+  background-color : #010F14;
+  text-align       : center;
+  font-family      : 'Sarabun',
+                     sans-serif;
+  font-size        : 48px;
+  font-weight      : 800;
 }
 
 .entrar:hover {
-    animation: jello-horizontal 0.9s both;
+  animation : jello-horizontal 0.9s both;
 }
 
 .campo-email {
-    background-color: white;
-    color: #010F14;
-    position: absolute;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    text-align: center;
-    width: 598px;
-    height: 75px;
-    left: 661px;
-    top: 400px;
-    z-index: 1;
-    border-radius: 90px;
-    border: 6px solid #37595E;
+  z-index          : 1;
+  position         : absolute;
+  top              : 400px;
+  left             : 661px;
+  width            : 598px;
+  height           : 75px;
+  color            : #010F14;
+  border           : 6px solid #37595E;
+  border-radius    : 90px;
+  background-color : white;
+  text-align       : center;
+  font-family      : 'Sarabun',
+                     sans-serif;
+  font-size        : 34px;
+  font-weight      : 800;
 }
 
 .campo-email:focus {
-    outline: none;
+  outline : none;
 }
 
 .campo-senha {
-    background: white;
-    color: #010F14;
-    position: absolute;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    text-align: center;
-    width: 598px;
-    height: 75px;
-    left: 660px;
-    top: 520px;
-    z-index: 1;
-    border-radius: 90px;
-    border: 6px solid #37595E;
+  z-index       : 1;
+  position      : absolute;
+  top           : 520px;
+  left          : 660px;
+  width         : 598px;
+  height        : 75px;
+  color         : #010F14;
+  border        : 6px solid #37595E;
+  border-radius : 90px;
+  background    : white;
+  text-align    : center;
+  font-family   : 'Sarabun',
+                  sans-serif;
+  font-size     : 34px;
+  font-weight   : 800;
 }
 
 .campo-senha:focus {
-    outline: none;
+  outline : none;
 }
 
 .mute {
-    position: fixed;
-    bottom: 85px;
-    left: 85px;
+  position : fixed;
+  bottom   : 85px;
+  left     : 85px;
 }
 
 .mute:hover {
-    animation: jello-horizontal 0.9s both;
+  animation : jello-horizontal 0.9s both;
 }
 
 .wrapper {
-    display: block;
-    margin: 10% 0 0 30%;
-    overflow-x: scroll;
-    overflow-y: scroll;
+  display    : block;
+  margin     : 10% 0 0 30%;
+  overflow-x : scroll;
+  overflow-y : scroll;
 }
 
 .wrapper::-webkit-scrollbar {
-    display: none;
+  display : none;
 }
 
 .sala {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "tema desc online";
-    background: #010F14;
-    margin: 0 0 40px 0;
-    width: 1200px;
-    height: 175px;
-    z-index: 1;
-    border-radius: 90px;
-    border: 6px solid #37595E;
+  z-index               : 1;
+  display               : grid;
+  width                 : 1200px;
+  height                : 175px;
+  margin                : 0 0 40px 0;
+  border                : 6px solid #37595E;
+  border-radius         : 90px;
+  background            : #010F14;
+  grid-template-columns : 1fr 1fr 1fr;
+  grid-template-areas   : "tema desc online";
 }
 
 .tema {
-    grid-area: tema;
-    grid-auto-columns: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    border-radius: 80px;
-    border: 6px solid #37595E;
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 54px;
-    text-align: center;
+  display           : flex;
+  width             : 450px;
+  color             : white;
+  border            : 6px solid #37595E;
+  border-radius     : 80px;
+  text-align        : center;
+  align-items       : center;
+  font-family       : 'Sarabun',
+                      sans-serif;
+  font-size         : 54px;
+  font-weight       : 800;
+  justify-content   : center;
+  grid-area         : tema;
+  grid-auto-columns : 100%;
 }
 
 .desc {
-    grid-area: desc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 160px;
-    padding-left: 15px;
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 24px;
-    text-align: center;
+  display         : flex;
+  width           : 400px;
+  height          : 160px;
+  padding-left    : 15px;
+  color           : white;
+  text-align      : center;
+  align-items     : center;
+  font-family     : 'Sarabun',
+                    sans-serif;
+  font-size       : 24px;
+  font-weight     : 800;
+  justify-content : center;
+  grid-area       : desc;
 }
 
 .online {
-    grid-area: online;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    text-align: center;
+  display         : flex;
+  color           : white;
+  text-align      : center;
+  align-items     : center;
+  font-family     : 'Sarabun',
+                    sans-serif;
+  font-size       : 34px;
+  font-weight     : 800;
+  justify-content : center;
+  grid-area       : online;
 }
 
 @keyframes jello-horizontal {
-    0% {
-        transform: scale3d(1, 1, 1);
-    }
-    30% {
-        transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-        transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-        transform: scale3d(1, 1, 1);
-    }
+  0% {
+    transform : scale3d(1, 1, 1);
+  }
+  
+  30% {
+    transform : scale3d(1.25, 0.75, 1);
+  }
+  
+  40% {
+    transform : scale3d(0.75, 1.25, 1);
+  }
+  
+  50% {
+    transform : scale3d(1.15, 0.85, 1);
+  }
+  
+  65% {
+    transform : scale3d(0.95, 1.05, 1);
+  }
+  
+  75% {
+    transform : scale3d(1.05, 0.95, 1);
+  }
+  
+  100% {
+    transform : scale3d(1, 1, 1);
+  }
 }
