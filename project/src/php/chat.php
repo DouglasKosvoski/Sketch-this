@@ -1,8 +1,6 @@
-<?php include './php/include/header.php';?>
-
 <body>
   <header>
-    <a href="salas.php"><img src="../img/Voltar.svg" id="voltar"></a>
+    <a href="./main.php?acao=salas"><img src="../img/Voltar.svg" id="voltar"></a>
     <img src="../img/Mute.svg" onclick="mute()" class="mute">
   </header>
   
@@ -85,5 +83,3 @@
     </div>
   </div>
 </body>
-
-<?php include './php/include/footer.php';?>

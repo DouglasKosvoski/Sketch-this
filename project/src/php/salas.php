@@ -1,8 +1,6 @@
-<?php include './php/include/header.php';?>
-
 <body id="salas">
   <header>
-    <a href="index.php"><img src="../img/Sair.svg" id="voltar"></a>
+    <a href="./main.php?acao=index"><img src="../img/Sair.svg" id="voltar"></a>
     <img src="../img/Mute.svg" onclick="mute()" class="mute">
     <div class="cortina"></div>
   </header>
@@ -10,7 +8,7 @@
   <div class="wrapper">
     <div class="sala">
       <div class="tema">
-        <a href="chat.php" id="exemploSala">Aleatório</a>
+        <a href="./main.php?acao=chat" id="exemploSala">Aleatório</a>
       </div>
       <div class="desc">
         Sala para jogar coversa fora.
@@ -74,8 +72,5 @@
         &nbsp;&nbsp;&nbsp;online 3/5
       </div>
     </div>
-
   </div>
 </body>
-
-<?php include './php/include/footer.php'; ?>

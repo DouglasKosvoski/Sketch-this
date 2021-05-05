@@ -1,5 +1,3 @@
-<?php include './php/include/header.php';?>
-
 <body class="inicial">
   <header id="top">
     <div id="logotipo">
@@ -13,7 +11,7 @@
     </div>
     <div id="btnInicio">
       <li>
-        <a href="login.php"><img src="../img/Login.svg" id="login"></a>
+        <a href="./main.php?acao=login"><img src="../img/Login.svg" id="login"></a>
       </li>
       <li>
         <img src="../img/Cadastro.svg" id="cadastro">
@@ -27,12 +25,5 @@
       <img src="../img/dec2.1.svg" id="dec2">
       <img src="../img/dec2.2.svg" id="dec2">
     </div>
-    <footer>
-      Termos de uso
-    </footer>
   </main>
 </body>
-
-<?php include './php/include/footer.php';?>
-
-
