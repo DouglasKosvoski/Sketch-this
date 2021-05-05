@@ -1,5 +1,5 @@
 function login() {
-  document.location.href = "./main.php?acao=chat";
+  document.location.href = "./main.php?acao=salas";
 }
 
 function mute() {
