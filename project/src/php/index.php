@@ -32,3 +32,4 @@
   </main>
 </body>
 
+<?php include './php/include/footer.php';?>
