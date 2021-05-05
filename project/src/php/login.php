@@ -1,4 +1,4 @@
-<body>
+<body class="telaLogin">
   <header>
     <a href="./main.php?acao=index"><img src="../img/Voltar.svg" id="voltarLogin"></a>
   </header>
