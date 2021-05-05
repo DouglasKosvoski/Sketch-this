@@ -14,10 +14,14 @@
         <a href="./main.php?acao=login"><img src="../img/Login.svg" id="login"></a>
       </li>
       <li>
-        <img src="../img/Cadastro.svg" id="cadastro">
+        <a href="./main.php?acao=cadastro">
+          <img src="../img/Cadastro.svg" id="cadastro">
+        </a>
       </li>
       <li>
-        <img src="../img/Bisbilhotar.svg" id="teste">
+        <a href="./main.php?acao=bisbilhotar">
+          <img src="../img/Bisbilhotar.svg" id="teste">
+        </a>
       </li>
     </div>
     <div>
@@ -27,3 +31,4 @@
     </div>
   </main>
 </body>
+
