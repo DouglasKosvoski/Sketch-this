@@ -12,6 +12,3 @@
 </main>
 
 <?php include './php/include/footer.php';?>
-
-
-
