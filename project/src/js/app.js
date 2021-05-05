@@ -18,10 +18,10 @@ function popUp(){
 function avatares(){
   var avatar = document.getElementById('avat');
   if (avatar.style.display === 'none'){
-      avatar.style.display = 'block';
+    avatar.style.display = 'block';
   }
   else 
-      avatar.style.display = 'none';
+  avatar.style.display = 'none';
 }
 
 //rola para o fim da coversa quando o usuário clica no chat
@@ -33,3 +33,4 @@ function scrollBottom() {
 function selectAvatar(){
   var avatarImg = document.getElementById('avat');
 }
+
