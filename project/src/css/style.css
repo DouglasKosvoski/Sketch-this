@@ -1,371 +1,371 @@
 * {
-    font-family: 'Lobster', cursive;
-    font-family: 'Sarabun', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Sarabun', sans-serif;
 }
 
 body {
-    background: #010F14;
-    margin: 0;
+  background: #010F14;
+  margin: 0;
 }
 
 p {
-    position: absolute;
-    height: 18%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    top: 15%;
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: 800;
-    font-size: min(10vw, 40px);
-    display: flex;
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 1;
+  position: absolute;
+  height: 18%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: 15%;
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 800;
+  font-size: min(10vw, 40px);
+  display: flex;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 1;
 }
 
 footer {
-    position: fixed;
-    width: 30%;
-    height: 10%;
-    border-radius: 0 50px 0 0;
-    left: 0px;
-    bottom: 0;
-    background: #010F14;
-    font-family: 'Sarabun', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: max(3vw, 18px);
-    text-align: center;
-    color: white;
+  position: fixed;
+  width: 30%;
+  height: 10%;
+  border-radius: 0 50px 0 0;
+  left: 0px;
+  bottom: 0;
+  background: #010F14;
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: max(3vw, 18px);
+  text-align: center;
+  color: white;
 }
 
 #intro {
-    width: 35%;
-    float: left;
-    margin-left: 18%;
-    margin-top: 3%;
-    font-family: 'Sarabun', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: min(5vw, 56px);
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
+  width: 35%;
+  float: left;
+  margin-left: 18%;
+  margin-top: 3%;
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: min(5vw, 56px);
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 #top {
-    width: 100%;
+  width: 100%;
 }
 
 #logotipo {
-    font-family: Lobster;
-    font-size: max(5vw, 23px);
-    height: 1.5em;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    background: #010F14;
-    border-radius: 0 0px 65px 65px;
+  font-family: Lobster;
+  font-size: max(5vw, 23px);
+  height: 1.5em;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #010F14;
+  border-radius: 0 0px 65px 65px;
 }
 
 #dec1 {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 #dec2 {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 #btnInicio {
-    position: relative;
-    display: block;
-    float: right;
-    margin-right: 5.5em;
-    list-style: none;
-    width: 25%;
+  position: relative;
+  display: block;
+  float: right;
+  margin-right: 5.5em;
+  list-style: none;
+  width: 25%;
 }
 
 li {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 #login {
-    width: 100%;
+  width: 100%;
 }
 
 #login:hover {
-    animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 #cadastro {
-    width: 100%;
+  width: 100%;
 }
 
 #cadastro:hover {
-    animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 #teste {
-    width: 100%;
+  width: 100%;
 }
 
 #teste:hover {
-    animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 #exemploSala {
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 54px;
-    text-decoration: none;
+  color: white;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 54px;
+  text-decoration: none;
 }
 
 #voltarLogin {
-    position: fixed;
-    width: 50%;
-    min-width: 200;
-    height: 105px;
-    left: 35px;
-    top: 35px;
-    z-index: 1;
+  position: fixed;
+  width: 50%;
+  min-width: 200;
+  height: 105px;
+  left: 35px;
+  top: 35px;
+  z-index: 1;
 }
 
 #voltarLogin:hover {
-    animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 #voltar {
-    position: fixed;
-    width: 25%;
-    min-width: 200;
-    height: 105px;
-    left: 35px;
-    top: 35px;
-    z-index: 1;
+  position: fixed;
+  width: 25%;
+  min-width: 200;
+  height: 105px;
+  left: 35px;
+  top: 35px;
+  z-index: 1;
 }
 
 #voltar:hover {
-    animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 /*Esconde o botão de enviar no chat #habilitar com mediaquery*/
 
 #submitmsg {
-    display: none;
+  display: none;
 }
 
 #popup {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    height: 15%;
-    border-radius: 90px;
-    background-color: #071E21;
-    border: 15px #37595E solid;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 15%;
+  border-radius: 90px;
+  background-color: #071E21;
+  border: 15px #37595E solid;
 }
 
 .popUp {
-    margin-left: 33%;
-    align-items: center;
-    row-gap: 10px;
-    column-gap: 10px;
-    display: grid;
-    grid-template: "1fr 2fr" "1fr 1fr";
-    grid-template-areas: "avatar nome" "elogio denunc";
+  margin-left: 33%;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  display: grid;
+  grid-template: "1fr 2fr" "1fr 1fr";
+  grid-template-areas: "avatar nome" "elogio denunc";
 }
 
 #avatar {
-    grid-area: avatar;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
+  grid-area: avatar;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
 }
 
 #perfil-nome {
-    grid-area: nome;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 24px;
-    text-align: center;
-    color: white;
+  grid-area: nome;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  text-align: center;
+  color: white;
 }
 
 #perfil-elogio {
-    grid-area: elogio;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center;
-    color: green;
+  grid-area: elogio;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  color: green;
 }
 
 #perfil-denuncia {
-    grid-area: denunc;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center;
-    color: tomato;
+  grid-area: denunc;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  color: tomato;
 }
 
 /*campo de texto do usuário, ele escreve a mensagem aqui*/
 
 #mensagem {
-    width: 100%;
-    border-radius: 0 0 0 50px;
-    border: 0;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    height: 82px;
-    font-size: 40px;
-    text-align: right;
-    color: white;
-    background-color: #37595E;
-    outline: none;
+  width: 100%;
+  border-radius: 0 0 0 50px;
+  border: 0;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  height: 82px;
+  font-size: 40px;
+  text-align: right;
+  color: white;
+  background-color: #37595E;
+  outline: none;
 }
 
 /*ao clicar no campo, o tamanho da fonte diminui*/
 
 #mensagem:focus {
-    height: 82px;
-    color: white;
-    font-size: 30px;
+  height: 82px;
+  color: white;
+  font-size: 30px;
 }
 
 #salas {
-    overflow-y: scroll;
-    overflow-x: scroll;
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 #salas::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 #mensagem::placeholder {
-    color: white;
+  color: white;
 }
 
 .entrada {
-    position: fixed;
-    right: 0;
-    bottom: 10em;
-    width: 60%;
-    top: 70%;
-    text-align: right;
-    border-top: #010F14 10px solid;
-    z-index: 1;
+  position: fixed;
+  right: 0;
+  bottom: 10em;
+  width: 60%;
+  top: 70%;
+  text-align: right;
+  border-top: #010F14 10px solid;
+  z-index: 1;
 }
 
 .mensagens {
-    display: block;
-    position: absolute;
-    height: 70%;
-    width: 60%;
-    top: 0;
-    right: 0;
-    text-align: right;
-    background-color: #37595E;
-    overflow-x: scroll;
+  display: block;
+  position: absolute;
+  height: 70%;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: right;
+  background-color: #37595E;
+  overflow-x: scroll;
 }
 
 /*esconde a barra de rolagem*/
 
 .mensagens::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .recebido {
-    text-align: left;
-    color: black;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    margin-left: 10px;
-    padding: 10px 0 10px 0;
+  text-align: left;
+  color: black;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 10px 0 10px 0;
 }
 
 .conversaRec {
-    width: 35%;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: left;
-    color: white;
-    border-radius: 80px;
-    border: 6px solid #010F14;
-    padding: 15px;
+  width: 35%;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  border-radius: 80px;
+  border: 6px solid #010F14;
+  padding: 15px;
 }
 
 .enviado {
-    margin-left: 60%;
-    padding: 10px 0 10px 0;
+  margin-left: 60%;
+  padding: 10px 0 10px 0;
 }
 
 .conversaEnv {
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    color: white;
-    border-radius: 80px;
-    border: 6px solid #010F14;
-    padding: 15px;
-    margin-right: 10px;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+  border-radius: 80px;
+  border: 6px solid #010F14;
+  padding: 15px;
+  margin-right: 10px;
 }
 
 /*background da tela inicial, que é mais clara que as outras*/
 
 .inicial {
-    background: #071E21;
+  background: #071E21;
 }
 
 .avatar {
-    position: fixed;
-    background-color: white;
-    border: #37595E;
-    border-radius: 15px;
-    width: min(25%, 200px);
-    padding-top: min(25%, 200px);
-    transform: translate(50%, 0px);
-    right: 50%;
-    top: 10%;
-    z-index: 2;
+  position: fixed;
+  background-color: white;
+  border: #37595E;
+  border-radius: 15px;
+  width: min(25%, 200px);
+  padding-top: min(25%, 200px);
+  transform: translate(50%, 0px);
+  right: 50%;
+  top: 10%;
+  z-index: 2;
 }
 
 .img-avatar-wrapper {
-    display: none;
-    background-color: whitesmoke;
-    max-height: 210px;
-    overflow-y: scroll;
+  display: none;
+  background-color: whitesmoke;
+  max-height: 210px;
+  overflow-y: scroll;
 }
 
 #img-avatar {
-    width: 50%;
-    right: 50%;
-    transform: translate(50%, 0px);
-    padding: 5% 0 15% 0;
+  width: 50%;
+  right: 50%;
+  transform: translate(50%, 0px);
+  padding: 5% 0 15% 0;
 }
 
 .termos {
-    position: fixed;
-    color: white;
-    text-align: center;
-    font-family: 'Sarabun', sans-serif;
-    font-size: 18px;
-    bottom: 5%;
-    right: 50%;
-    transform: translate(50%, 0px);
+  position: fixed;
+  color: white;
+  text-align: center;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 18px;
+  bottom: 5%;
+  right: 50%;
+  transform: translate(50%, 0px);
 }
 
 .telaLogin {
@@ -375,314 +375,314 @@ li {
 }
 
 .entrar {
-    position: absolute;
-    width: 315px;
-    height: 100px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 10%;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 48px;
-    background-color: #010F14;
-    border-radius: 90px;
-    border: 6px solid #37595E;
+  position: absolute;
+  width: 315px;
+  height: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 10%;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  background-color: #010F14;
+  border-radius: 90px;
+  border: 6px solid #37595E;
 }
 
 .campo-email {
-    background-color: white;
-    color: #010F14;
-    position: absolute;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    text-align: center;
-    width: 30%;
-    height: 8%;
-    left: 50%;
-    top: 50%;
-    min-width: 300px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    border-radius: 90px;
-    border: 6px solid #37595E;
+  background-color: white;
+  color: #010F14;
+  position: absolute;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  text-align: center;
+  width: 30%;
+  height: 8%;
+  left: 50%;
+  top: 50%;
+  min-width: 300px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 90px;
+  border: 6px solid #37595E;
 }
 
 .campo-email:focus {
-    outline: none;
+  outline: none;
 }
 
 .campo-nickname {
-    background-color: white;
-    color: #010F14;
-    position: absolute;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    text-align: center;
-    width: 30%;
-    height: 8%;
-    left: 50%;
-    top: 40%;
-    min-width: 300px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    border-radius: 90px;
-    border: 6px solid #37595E;
+  background-color: white;
+  color: #010F14;
+  position: absolute;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  text-align: center;
+  width: 30%;
+  height: 8%;
+  left: 50%;
+  top: 40%;
+  min-width: 300px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 90px;
+  border: 6px solid #37595E;
 }
 
 .campo-nickname:focus {
-    outline: none;
+  outline: none;
 }
 
 .campo-senha {
-    background: white;
-    color: #010F14;
-    position: absolute;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    text-align: center;
-    width: 30%;
-    height: 8%;
-    left: 50%;
-    top: 60%;
-    min-width: 300px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    border-radius: 90px;
-    border: 6px solid #37595E;
+  background: white;
+  color: #010F14;
+  position: absolute;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  text-align: center;
+  width: 30%;
+  height: 8%;
+  left: 50%;
+  top: 60%;
+  min-width: 300px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 90px;
+  border: 6px solid #37595E;
 }
 
 .campo-senha:focus {
-    outline: none;
+  outline: none;
 }
 
 .mute {
-    position: fixed;
-    bottom: 85px;
-    left: 85px;
+  position: fixed;
+  bottom: 85px;
+  left: 85px;
 }
 
 .mute:hover {
-    animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 .cortina {
-    width: 100%;
-    height: 10%;
-    display: none;
-    background-color: #071E21;
+  width: 100%;
+  height: 10%;
+  display: none;
+  background-color: #071E21;
 }
 
 .wrapper {
-    display: block;
-    margin: 10% 0 0 30%;
-    overflow-x: scroll;
-    overflow-y: scroll;
+  display: block;
+  margin: 10% 0 0 30%;
+  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 .wrapper::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .sala {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "tema desc online";
-    background: #010F14;
-    margin: 0 0 0.5em 0;
-    height: 20%;
-    z-index: 1;
-    border-radius: 90px;
-    border: 6px solid #37595E;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "tema desc online";
+  background: #010F14;
+  margin: 0 0 0.5em 0;
+  height: 20%;
+  z-index: 1;
+  border-radius: 90px;
+  border: 6px solid #37595E;
 }
 
 .tema {
-    grid-area: tema;
-    grid-auto-columns: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 80px;
-    border: 6px solid #37595E;
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 54px;
-    text-align: center;
+  grid-area: tema;
+  grid-auto-columns: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  border: 6px solid #37595E;
+  color: white;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 54px;
+  text-align: center;
 }
 
 .desc {
-    grid-area: desc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15px;
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 1.25vw;
-    text-align: center;
+  grid-area: desc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  color: white;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 1.25vw;
+  text-align: center;
 }
 
 .online {
-    grid-area: online;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 800;
-    font-size: 34px;
-    text-align: center;
+  grid-area: online;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 800;
+  font-size: 34px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {
-    .cortina {
-        display: block;
-        width: 100%;
-        height: 150px;
-        top: 0;
-        position: fixed;
-        z-index: 0;
-        background-color: #010F14;
-    }
-    .avatar {
-        top: 20%;
-    }
-    .mute {
-        position: fixed;
-        top: 49px;
-        left: 75%;
-        width: 72px;
-        z-index: 1;
-    }
-    .wrapper {
-        margin: 200px 0 0 0;
-    }
-    .tema {
-        font-size: 6vw;
-    }
-    .desc {
-        font-size: min(3.5vw, 20px);
-    }
-    .online {
-        font-size: 2vw;
-    }
-    #exemploSala {
-        font-size: 6vw;
-        text-decoration: none;
-    }
-    #intro {
-        display: block;
-        margin-left: 50%;
-        transform: translate(-50%, -0%);
-    }
-    #btnInicio {
-        list-style: none;
-        margin-top: 15%;
-        float: left;
-        margin-left: 50%;
-        transform: translate(-50%, -0%);
-        width: 125;
-    }
-    li {
-        margin-top: 10%;
-    }
-    #login {
-        width: 100%;
-    }
-    #cadastro {
-        width: 100%;
-    }
-    #teste {
-        width: 100%;
-    }
-    .mensagens {
-        display: block;
-        position: absolute;
-        height: 69%;
-        width: 100%;
-        top: 22%;
-        right: 0;
-        z-index: 0;
-    }
-    .enviado {
-        margin-left: 40%;
-        padding: 10px 0 10px 0;
-    }
-    .entrada {
-        position: fixed;
-        top: 90%;
-        width: 100%;
-        text-align: right;
-        bottom: 0;
-    }
-    .conversaEnv {
-        font-size: 18px;
-    }
-    .conversaRec {
-        font-size: 18px;
-    }
-    #mensagem {
-        width: 100%;
-        height: 55px;
-        border-radius: 0 0 0 0;
-        font-size: 24px;
-        text-align: right;
-        color: white;
-        background-color: #37595E;
-        outline: none;
-        margin-block-end: 0;
-    }
-    #popup {
-        display: none;
-        position: absolute;
-        z-index: 1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-        height: 15%;
-        border-radius: 90px;
-        background-color: #071E21;
-        border: 15px #010F14 solid;
-    }
-    .popUp {
-        margin-left: 0;
-        align-items: center;
-        row-gap: 10px;
-        column-gap: 10px;
-        display: grid;
-        grid-template: "1fr 2fr" "1fr 1fr";
-        grid-template-areas: "avatar nome" "elogio denunc";
-    }
+  .cortina {
+    display: block;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    position: fixed;
+    z-index: 0;
+    background-color: #010F14;
+  }
+  .avatar {
+    top: 20%;
+  }
+  .mute {
+    position: fixed;
+    top: 49px;
+    left: 75%;
+    width: 72px;
+    z-index: 1;
+  }
+  .wrapper {
+    margin: 200px 0 0 0;
+  }
+  .tema {
+    font-size: 6vw;
+  }
+  .desc {
+    font-size: min(3.5vw, 20px);
+  }
+  .online {
+    font-size: 2vw;
+  }
+  #exemploSala {
+    font-size: 6vw;
+    text-decoration: none;
+  }
+  #intro {
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, -0%);
+  }
+  #btnInicio {
+    list-style: none;
+    margin-top: 15%;
+    float: left;
+    margin-left: 50%;
+    transform: translate(-50%, -0%);
+    width: 125;
+  }
+  li {
+    margin-top: 10%;
+  }
+  #login {
+    width: 100%;
+  }
+  #cadastro {
+    width: 100%;
+  }
+  #teste {
+    width: 100%;
+  }
+  .mensagens {
+    display: block;
+    position: absolute;
+    height: 69%;
+    width: 100%;
+    top: 22%;
+    right: 0;
+    z-index: 0;
+  }
+  .enviado {
+    margin-left: 40%;
+    padding: 10px 0 10px 0;
+  }
+  .entrada {
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    text-align: right;
+    bottom: 0;
+  }
+  .conversaEnv {
+    font-size: 18px;
+  }
+  .conversaRec {
+    font-size: 18px;
+  }
+  #mensagem {
+    width: 100%;
+    height: 55px;
+    border-radius: 0 0 0 0;
+    font-size: 24px;
+    text-align: right;
+    color: white;
+    background-color: #37595E;
+    outline: none;
+    margin-block-end: 0;
+  }
+  #popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 15%;
+    border-radius: 90px;
+    background-color: #071E21;
+    border: 15px #010F14 solid;
+  }
+  .popUp {
+    margin-left: 0;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    display: grid;
+    grid-template: "1fr 2fr" "1fr 1fr";
+    grid-template-areas: "avatar nome" "elogio denunc";
+  }
 }
 
 @keyframes jello-horizontal {
-    0% {
-        transform: scale3d(1, 1, 1);
-    }
-    30% {
-        transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-        transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-        transform: scale3d(1, 1, 1);
-    }
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
