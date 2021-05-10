@@ -11,7 +11,7 @@ function popUp(){
   if (ballon.style.display === 'none'){
     ballon.style.display = 'flex';
   }
-  else 
+  else
   ballon.style.display = 'none';
 }
 
@@ -20,7 +20,7 @@ function avatares(){
   if (avatar.style.display === 'none'){
     avatar.style.display = 'block';
   }
-  else 
+  else
   avatar.style.display = 'none';
 }
 
@@ -33,4 +33,3 @@ function scrollBottom() {
 function selectAvatar(){
   var avatarImg = document.getElementById('avat');
 }
-

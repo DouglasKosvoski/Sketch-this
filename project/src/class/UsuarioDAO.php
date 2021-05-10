@@ -19,4 +19,16 @@ class UsuarioDAO {
       echo "Erro no acesso aos dados: ". $e->getMessage();
     }
   }
+  public function cadastrar(Usuario $user) {
+    try {
+      $query = $this->connection->prepare("insert into usuario VALUES (NULL, :n, :e, :s, 0);");
+      $query->bindValue(":n", $user->getNick());
+      $query->bindValue(":e", $user->getEmail());
+      $query->bindValue(":s", $user->getSenha());
+      return $query->execute();
+    }
+    catch (PDOException $e){
+      echo "Erro no acesso aos dados: ". $e->getMessage();
+    }
+  }
 } ?>

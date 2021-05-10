@@ -39,6 +39,6 @@ class Usuario {
     return $this->$musica;
   }
   public function setMusica($musica){
-    $this->$musica = $$musica;
+    $this->$musica = $musica;
   }
 } ?>

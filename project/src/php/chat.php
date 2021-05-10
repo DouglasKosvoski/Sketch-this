@@ -23,17 +23,34 @@
   </div>
 
   <div class="mensagens" id="hist">
-    <div class="recebido" onclick="popUp()">
-      Douchebag
-      <div class="conversaRec">
-        How come you couldn't search it on google? are you retarded?
-      </div>
-    </div>
+    <?php
+    require_once "./class/Mensagem.php";
+    require_once "./class/MensagemDAO.php";
+    $asd = new MensagemDAO();
+    $mensagens = $asd->listar();
 
-    <div class="enviado">
-      <div class="conversaEnv">
-        Faith in you brother, stay strong.
+    foreach ($mensagens as $msg) { ?>
+      <div class="recebido" onclick="popUp()">
+        <div class="conversaRec">
+          <?= $msg->getId() ?>
+          <?= $msg->getIdUsuario() ?>
+          <?= $msg->getIdSala() ?>
+          <?= $msg->getDataEnvio() ?>
+          <?= $msg->getTexto() ?>
+        </div>
       </div>
-    </div>
-  </div>
+
+      <div class="enviado">
+        <div class="conversaEnv">
+          <?= $msg->getId() ?>
+          <?= $msg->getIdUsuario() ?>
+          <?= $msg->getIdSala() ?>
+          <?= $msg->getDataEnvio() ?>
+          <?= $msg->getTexto() ?>
+        </div>
+      </div>
+    <?php } ?>
+
+
+</div>
 </body>
