@@ -4,6 +4,8 @@ class Usuario {
   private $id;
   private $nick;
   private $email;
+  private $senha;
+  private $musica;
 
   public function getId(){
     return $this->id;
@@ -24,5 +26,19 @@ class Usuario {
   }
   public function setEmail($email){
     $this->email = $email;
+  }
+
+  public function getSenha(){
+    return $this->senha;
+  }
+  public function setSenha($senha){
+    $this->senha = $senha;
+  }
+
+  public function getMusica(){
+    return $this->$musica;
+  }
+  public function setMusica($musica){
+    $this->$musica = $$musica;
   }
 } ?>

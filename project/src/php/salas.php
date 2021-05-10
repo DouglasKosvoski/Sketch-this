@@ -1,7 +1,7 @@
 <body id="salas">
   <header>
     <a href="./main.php?acao=index"><img src="../img/Sair.svg" id="voltar"></a>
-    <img src="../img/Mute.svg" onclick="mute()" class="mute">
+    <?php include "./php/include/mute.php"; ?>
     <div class="cortina"></div>
   </header>
 
@@ -19,7 +19,7 @@
     foreach ($lista as $sala) { ?>
       <div class="sala">
         <div class="tema">
-          <a href="./main.php?acao=chat" id="exemploSala"><?=$sala->getTema()?></a>
+          <a href=<?="./main.php?acao=chat&sala=".$sala->getTema()?> id="exemploSala"><?=$sala->getTema()?></a>
         </div>
         <div class="desc">
           <?=$sala->getDescricao()?>
