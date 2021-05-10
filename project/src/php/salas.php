@@ -5,72 +5,30 @@
     <div class="cortina"></div>
   </header>
 
+
   <div class="wrapper">
-    <div class="sala">
-      <div class="tema">
-        <a href="./main.php?acao=chat" id="exemploSala">Aleatório</a>
-      </div>
-      <div class="desc">
-        Sala para jogar coversa fora.
-      </div>
-      <div class="online">
-        <img src="../img/Disp.svg">
-        &nbsp;&nbsp;&nbsp;online 4/5
-      </div>
-    </div>
+    <?php
+    require_once "./class/Sala.php";
+    require_once "./class/SalaDAO.php";
 
-    <div class="sala">
-      <div class="tema">
-        Segredos
-      </div>
-      <div class="desc">
-        Quer desabafar e não tem ninguém para quem falar? agora tem.
-      </div>
-      <div class="online">
-        <img src="../img/Disp.svg">
-        &nbsp;&nbsp;&nbsp;online 3/5
-      </div>
-    </div>
+    $salas = new SalaDAO();
+    $lista = $salas->listar();
+    ?>
 
-    <div class="sala">
-      <div class="tema">
-        Conselhos
+    <?php
+    foreach ($lista as $sala) { ?>
+      <div class="sala">
+        <div class="tema">
+          <a href="./main.php?acao=chat" id="exemploSala"><?=$sala->getTema()?></a>
+        </div>
+        <div class="desc">
+          <?=$sala->getDescricao()?>
+        </div>
+        <div class="online">
+          <img src="../img/Disp.svg">
+          &nbsp;&nbsp;&nbsp;online <?=$sala->getUsuariosOnline()?>/<?=$sala->getCapacidade()?>
+        </div>
       </div>
-      <div class="desc">
-        Precisando de um conselho? as vezes um olhar estrangeiro para a situação
-        pode ser bom.
-      </div>
-
-      <div class="online">
-        <img src="../img/Disp.svg">
-        &nbsp;&nbsp;&nbsp;online 2/5
-      </div>
-    </div>
-
-    <div class="sala">
-      <div class="tema">
-        Pergunte algo
-      </div>
-      <div class="desc">
-        Perguntas sem objetivo aparente.
-      </div>
-      <div class="online">
-        <img src="../img/Disp.svg">
-        &nbsp;&nbsp;&nbsp;online 3/5
-      </div>
-    </div>
-
-    <div class="sala">
-      <div class="tema">
-        Ajuda
-      </div>
-      <div class="desc">
-        Precisando de ajuda? talvez alguém aqui possa te ajudar.
-      </div>
-      <div class="online">
-        <img src="../img/Disp.svg">
-        &nbsp;&nbsp;&nbsp;online 3/5
-      </div>
-    </div>
+    <?php } ?>
   </div>
 </body>

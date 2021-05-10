@@ -1,22 +1,20 @@
 <?php
 
 class Usuario {
-  private $codigo;
+  private $id;
   private $nick;
   private $email;
 
   public function getId(){
-    return $this->codigo;
+    return $this->id;
   }
-
-  public function setId($cod){
-    $this->codigo = $cod;
+  public function setId($id){
+    $this->id = $id;
   }
 
   public function getNick(){
     return $this->nick;
   }
-
   public function setNick($nick){
     $this->nick = $nick;
   }
@@ -24,7 +22,6 @@ class Usuario {
   public function getEmail(){
     return $this->email;
   }
-
   public function setEmail($email){
     $this->email = $email;
   }

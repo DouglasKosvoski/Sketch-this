@@ -2,7 +2,7 @@
 
 require_once "Connection.php";
 
-class UsuarioDAO {
+class SalaDAO {
   public $connection;
 
   public function __construct() {
@@ -11,12 +11,12 @@ class UsuarioDAO {
 
   public function listar() {
     try {
-      $query = $this->connection->prepare("select * from usuario");
+      $query = $this->connection->prepare("select * from sala");
       $query->execute();
-      return $query->fetchAll(PDO::FETCH_CLASS, "Usuario");
+      return $query->fetchAll(PDO::FETCH_CLASS, "Sala");
     }
     catch (PDOException $e){
-      echo "Erro no acesso aos dados: ". $e->getMessage();
+      echo "<p>Erro no acesso aos dados: ". $e->getMessage()."</p>";
     }
   }
 } ?>
