@@ -19,6 +19,7 @@ class UsuarioDAO {
       echo "Erro no acesso aos dados: ". $e->getMessage();
     }
   }
+
   public function cadastrar(Usuario $user) {
     try {
       $query = $this->connection->prepare("insert into usuario VALUES (NULL, :n, :e, :s, 0);");
@@ -28,6 +29,29 @@ class UsuarioDAO {
       return $query->execute();
     }
     catch (PDOException $e){
+      echo "Erro no acesso aos dados: ". $e->getMessage();
+    }
+  }
+
+  public function login($email, $senha) {
+    try {
+      $query = $this->connection->prepare("select * from usuario where email=:e");
+      $query->bindValue(":e", $email);
+      $query->execute();
+      $registro = $query->fetchAll(PDO::FETCH_CLASS, "Usuario");
+
+      if($query->rowCount() == 1){
+        if(!password_verify($senha, $registro[0]->getSenha())){
+          return false;
+        }
+        else {
+          return true;
+        }
+      }
+      else{
+        return false;
+      }
+    } catch (PDOException $e) {
       echo "Erro no acesso aos dados: ". $e->getMessage();
     }
   }
