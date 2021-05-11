@@ -14,7 +14,7 @@ if (isset($_POST['nick_field'])) {
   $user->setEmail($mail);
   $user->setSenha($senha);
   $userDAO->cadastrar($user);
-  header("Location:./main.php?acao=salas");
+  header("Location: ./main.php?acao=salas");
 }
 else { ?>
   <body class="telaLogin">

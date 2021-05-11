@@ -11,13 +11,13 @@ if (isset($_POST['email_field'])) {
   $login_existe = $userDAO->login($mail, $pswd);
 
   if ($login_existe == false) {
-    header("Location:./main.php?acao=login");
+    header("Location: ./main.php?acao=login");
   }
   elseif ($login_existe = true) {
-    header("Location:./main.php?acao=salas");
+    header("Location: ./main.php?acao=salas");
   }
   else {
-    header("Location:./main.php");
+    header("Location: ./main.php");
   }
 
 } else { ?>

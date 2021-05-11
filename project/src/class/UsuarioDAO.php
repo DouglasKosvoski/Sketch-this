@@ -22,7 +22,7 @@ class UsuarioDAO {
 
   public function cadastrar(Usuario $user) {
     try {
-      $query = $this->connection->prepare("insert into usuario VALUES (NULL, :n, :e, :s, 0);");
+      $query = $this->connection->prepare("insert into usuario VALUES (NULL, :n, :e, :s, 0); insert into reputacao values ((select codigo from usuario where email=:e), 0, NULL);");
       $query->bindValue(":n", $user->getNick());
       $query->bindValue(":e", $user->getEmail());
       $query->bindValue(":s", $user->getSenha());
