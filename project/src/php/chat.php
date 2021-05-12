@@ -1,7 +1,12 @@
 
+<?php
+$id = isset($_GET['id']) ? $_GET['id'] : "";
+$sala = isset($_GET['sala']) ? $_GET['sala'] : "";
+?>
+
 <body>
   <header>
-    <a href="./main.php?acao=salas"><img src="../img/Voltar.svg" id="voltar"></a>
+    <a href="./main.php?acao=salas&id=<?=$id?>"><img src="../img/Voltar.svg" id="voltar"></a>
     <?php include "./php/include/mute.php"; ?>
   </header>
 
@@ -26,31 +31,31 @@
     <?php
     require_once "./class/Mensagem.php";
     require_once "./class/MensagemDAO.php";
+
     $asd = new MensagemDAO();
     $mensagens = $asd->listar();
 
     foreach ($mensagens as $msg) { ?>
-      <div class="recebido" onclick="popUp()">
-        <div class="conversaRec">
-          <?= $msg->getId() ?>
-          <?= $msg->getIdUsuario() ?>
-          <?= $msg->getIdSala() ?>
-          <?= $msg->getDataEnvio() ?>
-          <?= $msg->getTexto() ?>
-        </div>
-      </div>
+      <?php
+      if ($msg->getIdSala() == $sala) {
+        if ($msg->getIdUsuario() == $id) { ?>
+          <div class="enviado">
+            <div class="conversaEnv">
+              <?php echo $msg->getDataEnvio()." - Você <br>".$msg->getTexto()?>
+            </div>
+          </div>
+        <?php }
+        else { ?>
+          <div class="recebido" onclick="popUp()">
+            <div class="conversaRec">
+              <?php echo $msg->getDataEnvio()." - ".$msg->getNickUsuario()."<br>".$msg->getTexto()?>
+            </div>
+          </div>
+          <?php
+        }
+      }
+    }
+    ?>
 
-      <div class="enviado">
-        <div class="conversaEnv">
-          <?= $msg->getId() ?>
-          <?= $msg->getIdUsuario() ?>
-          <?= $msg->getIdSala() ?>
-          <?= $msg->getDataEnvio() ?>
-          <?= $msg->getTexto() ?>
-        </div>
-      </div>
-    <?php } ?>
-
-
-</div>
+  </div>
 </body>

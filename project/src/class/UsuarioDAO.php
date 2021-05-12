@@ -55,4 +55,19 @@ class UsuarioDAO {
       echo "Erro no acesso aos dados: ". $e->getMessage();
     }
   }
+
+  public function getIdFromEmail($email) {
+    try {
+      $query = $this->connection->prepare("select codigo from usuario where email=:e");
+      $query->bindValue(":e", $email);
+      $query->execute();
+      $registro = $query->fetchAll(PDO::FETCH_CLASS, "Usuario");
+      return $registro;
+
+    } catch (PDOException $e) {
+      echo "Erro no acesso aos dados: ". $e->getMessage();
+    }
+  }
+
+
 } ?>

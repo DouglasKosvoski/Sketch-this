@@ -1,7 +1,7 @@
 
 <?php
 class Sala {
-  private $id;
+  private $codigo;
   private $tema;
   private $capacidade;
   private $usuarios_online;
@@ -15,10 +15,10 @@ class Sala {
   }
 
   public function getId(){
-    return $this->id;
+    return $this->codigo;
   }
-  public function setId($id){
-    $this->id = $id;
+  public function setId($codigo){
+    $this->codigo = $codigo;
   }
 
   public function getTema(){

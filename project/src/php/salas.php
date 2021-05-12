@@ -1,3 +1,5 @@
+<?php $id = isset($_GET['id']) ? $_GET['id'] : "None";?>
+
 <body id="salas">
   <header>
     <a href="./main.php?acao=index"><img src="../img/Sair.svg" id="voltar"></a>
@@ -19,7 +21,7 @@
     foreach ($lista as $sala) { ?>
       <div class="sala">
         <div class="tema">
-          <a href=<?="./main.php?acao=chat&sala=".$sala->getTema()?> id="exemploSala"><?=$sala->getTema()?></a>
+          <a href=<?="./main.php?acao=chat&sala=".$sala->getId()."&id=".$id?> id="exemploSala"><?=$sala->getTema()?></a>
         </div>
         <div class="desc">
           <?=$sala->getDescricao()?>

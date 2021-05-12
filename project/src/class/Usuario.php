@@ -1,17 +1,17 @@
 <?php
 
 class Usuario {
-  private $id;
+  private $codigo;
   private $nick;
   private $email;
   private $senha;
   private $musica;
 
   public function getId(){
-    return $this->id;
+    return $this->codigo;
   }
-  public function setId($id){
-    $this->id = $id;
+  public function setId($codigo){
+    $this->codigo = $codigo;
   }
 
   public function getNick(){
