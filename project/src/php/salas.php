@@ -27,7 +27,7 @@
           <?=$sala->getDescricao()?>
         </div>
         <div class="online">
-          <img src="../img/Disp.svg">
+          <img class="img-online" src="../img/Disp.svg">
           &nbsp;&nbsp;&nbsp;online <?=$sala->getUsuariosOnline()?>/<?=$sala->getCapacidade()?>
         </div>
       </div>
