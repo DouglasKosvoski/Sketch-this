@@ -87,13 +87,13 @@ footer {
   position: relative;
   display: block;
   float: right;
-  margin-right: 5.5em;
+  margin: 3em 9.5em 0 0;
   list-style: none;
   width: 25%;
 }
 
 li {
-  margin-top: 10%;
+  margin-top: 3%;
 }
 
 #login {
@@ -124,13 +124,12 @@ li {
   color: white;
   font-family: 'Sarabun', sans-serif;
   font-weight: 800;
-  font-size: 54px;
+  font-size: 48px;
   text-decoration: none;
 }
 
 #voltarLogin {
   position: fixed;
-  width: 50%;
   min-width: 200;
   height: 105px;
   left: 35px;
@@ -147,7 +146,7 @@ li {
   width: 25%;
   min-width: 200;
   height: 105px;
-  left: 35px;
+  left: 3%;
   top: 35px;
   z-index: 1;
 }
@@ -339,7 +338,7 @@ li {
   padding-top: min(25%, 200px);
   transform: translate(50%, 0px);
   right: 50%;
-  top: 20%;
+  top: 10%;
   z-index: 2;
 }
 
@@ -348,6 +347,7 @@ li {
   background-color: whitesmoke;
   max-height: 210px;
   overflow-y: scroll;
+  border-radius: 25px;
 }
 
 #img-avatar {
@@ -362,16 +362,16 @@ li {
   color: white;
   text-align: center;
   font-family: 'Sarabun', sans-serif;
-  font-size: 18px;
+  font-size: min(4vw, 18px);
   bottom: 5%;
   right: 50%;
   transform: translate(50%, 0px);
 }
 
 .telaLogin {
-    background-image: url("../../img/Decoração.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../../img/Decoração.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .entrar {
@@ -494,10 +494,10 @@ li {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "tema desc online";
   background: #010F14;
-  margin: 0 0 0.5em 0;
+  margin: 0 0.5em 0.5em 0;
   height: 20%;
   z-index: 1;
-  border-radius: 90px;
+  border-radius: 100px;
   border: 6px solid #37595E;
 }
 
@@ -507,12 +507,11 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 80px;
+  border-radius: 100px;
   border: 6px solid #37595E;
   color: white;
   font-family: 'Sarabun', sans-serif;
   font-weight: 800;
-  font-size: 54px;
   text-align: center;
 }
 
@@ -541,6 +540,10 @@ li {
   text-align: center;
 }
 
+.img-online {
+  width: 10%;
+}
+
 @media only screen and (max-width: 1000px) {
   .cortina {
     display: block;
@@ -567,28 +570,32 @@ li {
   .tema {
     font-size: 6vw;
   }
+  .sala {
+    height: 15%;
+  }
   .desc {
-    font-size: min(3.5vw, 20px);
+    font-size: min(3.2vw, 20px);
   }
   .online {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   #exemploSala {
-    font-size: 6vw;
+    font-size: min(6vw, 32px);
     text-decoration: none;
   }
   #intro {
     display: block;
     margin-left: 50%;
+    margin-top: 10%;
+    font-size: min(5vw, 25px);
     transform: translate(-50%, -0%);
   }
   #btnInicio {
     list-style: none;
-    margin-top: 15%;
     float: left;
     margin-left: 50%;
     transform: translate(-50%, -0%);
-    width: 125;
+    width: min(40%, 200px);
   }
   li {
     margin-top: 10%;
