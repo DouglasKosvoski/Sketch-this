@@ -28,7 +28,7 @@ if (isset($_POST['email_field'])) {
       <a href="./main.php?acao=index"><img src="../img/Voltar.svg" id="voltarLogin"></a>
     </header>
     <div>
-      <p style="top:30%;margin:0" id="titulo">Que bom lhe ver Novamente!</p>
+      <p id="titulo">Que bom lhe ver Novamente!</p>
       <form method="POST" action="">
         <input type="email" name="email_field" size="37" maxlength="50" placeholder="E-mail" id="id_email" class="campo-email" autocomplete="off" required autofocus>
 
