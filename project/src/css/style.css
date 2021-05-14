@@ -143,11 +143,10 @@ li {
 
 #voltar {
   position: fixed;
-  width: 25%;
   min-width: 200;
   height: 105px;
   left: 3%;
-  top: 35px;
+  top: 5%;
   z-index: 1;
 }
 
@@ -237,12 +236,6 @@ li {
 
 /*ao clicar no campo, o tamanho da fonte diminui*/
 
-#mensagem:focus {
-  height: 82px;
-  color: white;
-  font-size: 30px;
-}
-
 #salas {
   overflow-y: scroll;
   overflow-x: scroll;
@@ -254,6 +247,10 @@ li {
 
 #mensagem::placeholder {
   color: white;
+}
+
+#mensagem:focus::placeholder {
+  opacity: 0;
 }
 
 .entrada {
@@ -384,18 +381,21 @@ li {
   position: fixed;
   width: min(250px, 50%);
   height: min(100px, 14%);
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 5% auto;
+  left: 0;
+  right: 0;
   bottom: 13%;
   z-index: 1;
-  /* text-align: center; */
   color: white;
-  /* font-family: 'Sarabun', sans-serif; */
   font-weight: 800;
   font-size: min(9vw, 42px);
   background-color: #010F14;
   border-radius: 90px;
   border: 6px solid #37595E;
+}
+
+.entrar:hover {
+  animation: jello-horizontal 0.9s forwards;
 }
 
 .campo-email {
@@ -566,7 +566,7 @@ li {
   }
   .mute {
     position: fixed;
-    top: 49px;
+    top: 35px;
     left: 75%;
     width: 72px;
     z-index: 1;
@@ -619,9 +619,9 @@ li {
   .mensagens {
     display: block;
     position: absolute;
-    height: 69%;
+    height: 70%;
     width: 100%;
-    top: 22%;
+    top: 20%;
     right: 0;
     z-index: 0;
   }
@@ -657,7 +657,7 @@ li {
   }
   #mensagem {
     width: 100%;
-    height: 55px;
+    height: 100%;
     border-radius: 0 0 0 0;
     font-size: 24px;
     text-align: right;
@@ -692,6 +692,28 @@ li {
     top: 15%;
     width: auto;
     font-size: 6.5vw;
+  }
+  #voltar {
+    width: 20%;
+    top: 20px;
+  }
+  #login:hover {
+    animation: none;
+  }
+  #cadastro:hover {
+    animation: none;
+  }
+  .mute:hover {
+    animation: none;
+  }
+  #voltar:hover {
+    animation: none;
+  }
+  #teste:hover {
+    animation: none;
+  }
+  #voltarLogin:hover {
+    animation: none;
   }
 }
 
