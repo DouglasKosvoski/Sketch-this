@@ -304,7 +304,7 @@ li {
   color: white;
   border-radius: 80px;
   border: 6px solid #010F14;
-  padding: 15px;
+  padding: 20px;
 }
 
 .enviado {
@@ -319,7 +319,7 @@ li {
   color: white;
   border-radius: 80px;
   border: 6px solid #010F14;
-  padding: 15px;
+  padding: 20px;
   margin-right: 10px;
 }
 
@@ -334,8 +334,8 @@ li {
   background-color: white;
   border: #37595E;
   border-radius: 15px;
-  width: min(25%, 200px);
-  padding-top: min(25%, 200px);
+  width: min(25%, 165px);
+  padding-top: min(25%, 165px);
   transform: translate(50%, 0px);
   right: 50%;
   top: 10%;
@@ -392,7 +392,7 @@ li {
   color: white;
   /* font-family: 'Sarabun', sans-serif; */
   font-weight: 800;
-  font-size: 48px;
+  font-size: min(9vw, 42px);
   background-color: #010F14;
   border-radius: 90px;
   border: 6px solid #37595E;
@@ -406,11 +406,10 @@ li {
   font-weight: 800;
   font-size: 34px;
   text-align: center;
-  width: 30%;
+  width: max(30%, 250px);
   height: 8%;
   left: 50%;
   top: 45%;
-  min-width: 300px;
   transform: translate(-50%, -50%);
   z-index: 1;
   border-radius: 90px;
@@ -429,11 +428,12 @@ li {
   font-weight: 800;
   font-size: 34px;
   text-align: center;
-  width: 30%;
+  /* width: 30%; */
+  width: max(30%, 250px);
   height: 8%;
   left: 50%;
-  top: 40%;
-  min-width: 300px;
+  top: 35%;
+  /* min-width: 300px; */
   transform: translate(-50%, -50%);
   z-index: 1;
   border-radius: 90px;
@@ -452,11 +452,10 @@ li {
   font-weight: 800;
   font-size: 34px;
   text-align: center;
-  width: 30%;
+  width: max(30%, 250px);
   height: 8%;
   left: 50%;
   top: 55%;
-  min-width: 300px;
   transform: translate(-50%, -50%);
   z-index: 1;
   border-radius: 90px;
@@ -561,7 +560,9 @@ li {
     background-color: #010F14;
   }
   .avatar {
-    top: 20%;
+    top: 16%;
+    width: min(22%, 100px);
+    padding-top: min(22%, 100px);
   }
   .mute {
     position: fixed;
@@ -625,7 +626,12 @@ li {
     z-index: 0;
   }
   .enviado {
-    margin-left: 40%;
+    margin-left: 20%;
+    padding: 10px 0 10px 0;
+  }
+  .recebido {
+    width: 80%;
+    /* margin-left: 40%; */
     padding: 10px 0 10px 0;
   }
   .entrada {
@@ -636,10 +642,13 @@ li {
     bottom: 0;
   }
   .conversaEnv {
-    font-size: 18px;
+    font-size: min(18px, 4.5vw);
+    padding: 22px;
   }
   .conversaRec {
-    font-size: 18px;
+    font-size: min(18px, 4.5vw);
+    padding: 22px;
+    width: 80%;
   }
   #voltarLogin {
     left: 50%;
@@ -682,7 +691,7 @@ li {
   #titulo {
     top: 15%;
     width: auto;
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
 }
 
