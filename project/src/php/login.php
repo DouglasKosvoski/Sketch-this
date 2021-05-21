@@ -1,23 +1,23 @@
 <?php
-
 if (isset($_POST['email_field'])) {
   $mail = isset($_POST['email_field']) ? $_POST['email_field'] : "";
   $pswd = isset($_POST['password_field']) ? $_POST['password_field'] : "";
-
   require_once "./class/Usuario.php";
   require_once "./class/UsuarioDAO.php";
-
   $userDAO = new UsuarioDAO();
   $login_existe = $userDAO->login($mail, $pswd);
-
   if ($login_existe == false) {
     $tries = isset($_GET['tries']) ? $_GET['tries']+1 : 0;
-    header("Location:./main.php?acao=login&tries=".$tries);
+    ?>
+    <script type="text/javascript">window.location.href = './main.php?acao=login&tries=<?=$tries?>';</script>
+    <?php
   }
   elseif ($login_existe = true) {
     $id = $userDAO->getIdFromEmail($mail);
     $id = $id[0]->getId();
-    header("Location:./main.php?acao=salas&id=".$id);
+    ?>
+    <script type="text/javascript">window.location.href = './main.php?acao=salas&id=<?=$id?>';</script>
+    <?php
   }
 }
 else { ?>

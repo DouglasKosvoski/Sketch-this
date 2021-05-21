@@ -14,7 +14,9 @@ if (isset($_POST['nick_field'])) {
   $user->setEmail($mail);
   $user->setSenha($senha);
   $userDAO->cadastrar($user);
-  header("Location:./main.php?acao=salas&id=".$userDAO->getIdFromEmail($mail)[0]->getId());
+  ?>
+  <script type="text/javascript">window.location.href = './main.php?acao=salas&id=<?=$userDAO->getIdFromEmail($mail)[0]->getId()?>';</script>
+  <?php
 }
 else { ?>
   <body class="telaLogin">
