@@ -2,11 +2,6 @@ function login() {
   document.location.href = "./main.php?acao=salas";
 }
 
-function valida_login() {
-  asd = document.getElementById("titulo");
-  asd.innerText = "aaaaaaaaaaa";
-}
-
 function mute() {
   //sound goes none
 }
