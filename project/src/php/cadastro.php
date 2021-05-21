@@ -14,7 +14,7 @@ if (isset($_POST['nick_field'])) {
   $user->setEmail($mail);
   $user->setSenha($senha);
   $userDAO->cadastrar($user);
-  ?><meta http-equiv="refresh" content="0;url=./main.php?acao=salas&nick=<?=$user->getNick()?>"><?php
+  header("Location:./main.php?acao=salas&id=".$userDAO->getIdFromEmail($mail)[0]->getId());
 }
 else { ?>
   <body class="telaLogin">

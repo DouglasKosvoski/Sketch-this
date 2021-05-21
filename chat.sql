@@ -1,11 +1,4 @@
-
--- usuario(id, nick, email, senha, musica)
--- mensagem(id, id_sala, id_remetente, data_envio, texto)
--- reputacao(id_msg, id_usuario, pontuacao)
--- sala(id, nome, capacidade, tema, descricao, usuarios_online)
-
--- ////////////////////////////////////////////////////////////////////////////
-DROP DATABASE IF EXISTS chat;
+DROP DATABASE IF EXISTS 3838844_chat;
 
 CREATE DATABASE chat DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
@@ -25,9 +18,8 @@ CREATE TABLE usuario (
   musica BOOLEAN NOT NULL);
 
 CREATE TABLE reputacao (
-  id_usuario INTEGER,
+  id_usuario INTEGER NOT NULL,
   pontuacao INTEGER NOT NULL,
-  id_msg INTEGER,
   FOREIGN KEY (id_usuario) REFERENCES usuario(codigo));
 
 CREATE TABLE sala (
@@ -42,8 +34,7 @@ CREATE TABLE mensagem (
   id_usuario INTEGER NOT NULL,
   id_sala INTEGER NOT NULL,
   data_envio DATETIME NOT NULL,
-  texto VARCHAR(200),
-
+  texto VARCHAR(200) NOT NULL,
   FOREIGN KEY (id_usuario) REFERENCES usuario(codigo),
   FOREIGN KEY (id_sala) REFERENCES sala(codigo));
 

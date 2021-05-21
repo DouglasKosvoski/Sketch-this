@@ -11,18 +11,16 @@ if (isset($_POST['email_field'])) {
   $login_existe = $userDAO->login($mail, $pswd);
 
   if ($login_existe == false) {
-    ?><meta http-equiv="refresh" content="0;url=./main.php?acao=login&tries=<?=$tries?>"><?php
+    $tries = isset($_GET['tries']) ? $_GET['tries']+1 : 0;
+    header("Location:./main.php?acao=login&tries=".$tries);
   }
   elseif ($login_existe = true) {
     $id = $userDAO->getIdFromEmail($mail);
     $id = $id[0]->getId();
-    ?><meta http-equiv="refresh" content="0;url=./main.php?acao=salas&id=<?=$id?>"><?php
+    header("Location:./main.php?acao=salas&id=".$id);
   }
-  else {
-    ?><meta http-equiv="refresh" content="0;url=./main.php"><?php
-  }
-
-} else { ?>
+}
+else { ?>
   <body name="telaLogin" class="telaLogin">
     <header>
       <a href="./main.php?acao=index"><img src="../img/Voltar.svg" id="voltarLogin"></a>
