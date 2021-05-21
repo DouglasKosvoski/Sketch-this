@@ -359,7 +359,10 @@ li {
   font-size: 64px;
   width: 700px;
 }
-
+#login_invalido {
+  color:red;
+  font-size: 2rem;
+}
 .termos {
   position: fixed;
   color: white;
@@ -692,6 +695,10 @@ li {
     top: 15%;
     width: auto;
     font-size: 6.5vw;
+  }
+  #login_invalido {
+    color:red;
+    font-size: 2rem;
   }
   #voltar {
     width: 20%;

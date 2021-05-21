@@ -11,7 +11,7 @@ if (isset($_POST['email_field'])) {
   $login_existe = $userDAO->login($mail, $pswd);
 
   if ($login_existe == false) {
-    ?><meta http-equiv="refresh" content="0;url=./main.php?acao=login"><?php
+    ?><meta http-equiv="refresh" content="0;url=./main.php?acao=login&tries=<?=$tries?>"><?php
   }
   elseif ($login_existe = true) {
     $id = $userDAO->getIdFromEmail($mail);
@@ -30,6 +30,13 @@ if (isset($_POST['email_field'])) {
 
     <div>
       <p id="titulo">Que bom lhe ver Novamente!</p>
+
+      <?php
+      if (isset($_GET['tries'])) {
+        echo "<div id='login_invalido'>Email ou Senha incorretos</div>";
+      }
+      ?>
+
       <form method="POST" action="">
         <input type="email" name="email_field" size="37" maxlength="50" placeholder="E-mail" id="id_email" class="campo-email" autocomplete="off" required autofocus>
         <input type="password" name="password_field" size="37" maxlength="45" placeholder="Senha" id="password" class="campo-senha" required>
