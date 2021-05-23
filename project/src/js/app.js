@@ -15,6 +15,7 @@ function popUp(){
   ballon.style.display = 'none';
 }
 
+//expande o menu de avatares
 function avatares(){
   var avatar = document.getElementById('avat');
   if (avatar.style.display === 'none'){
@@ -24,12 +25,19 @@ function avatares(){
   avatar.style.display = 'none';
 }
 
+//muda o avatar
+function selectAvatar(id) {
+  var image = document.getElementById(id).src;
+  document.getElementById('selectedAvatar').src = image;
+}
+
 //rola para o fim da coversa quando o usuário clica no chat
 function scrollBottom() {
   var objDiv = document.getElementById("hist");
   objDiv.scrollTop = objDiv.scrollHeight;
 }
 
-function selectAvatar(){
-  var avatarImg = document.getElementById('avat');
-}
+//Não se se essa função vai ser utilizada, mas deixei aqui por conveniência, se for usar, tem que alterar o nome, dá conflito com outra função 
+// function selectAvatar(){
+//   var avatarImg = document.getElementById('avat');
+// } 
