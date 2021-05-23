@@ -353,6 +353,12 @@ li {
   transform: translate(50%, 0px);
   padding: 5% 0 15% 0;
 }
+#selectedAvatar{
+  width: 85%;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -110%);
+}
 
 #titulo {
   top: 13%;
@@ -360,8 +366,13 @@ li {
   width: 700px;
 }
 #login_invalido {
-  color:red;
+  color: tomato;
   font-size: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  bottom: 35%;
+  position: fixed;
+  text-align: center;
 }
 .termos {
   position: fixed;
@@ -697,8 +708,8 @@ li {
     font-size: 6.5vw;
   }
   #login_invalido {
-    color:red;
-    font-size: 2rem;
+    color:tomato;
+    font-size: min(18px, 5vw);
   }
   #voltar {
     width: 20%;
