@@ -25,12 +25,13 @@ else { ?>
     </header>
 
     <div class="avatar" onclick="avatares()">
+      <img id="selectedAvatar" src="../img/avatares/s.png">
       <div class="img-avatar-wrapper" id="avat">
         <?php
         $dir = "../img/avatares/";
         $images = glob($dir."*.png");
         foreach($images as $image) {
-          echo '<div><img src="'.$image.'" id="'.$image.'" style="margin:10%; max-width:80%;height:auto;" onclick="selectAvatar()"></div>';
+          echo '<div><img src="'.$image.'" id="'.$image.'" style="margin:10%; max-width:80%;height:auto;" onclick="selectAvatar(this.id)"></div>';
         } ?>
       </div>
     </div>
