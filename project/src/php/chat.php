@@ -21,7 +21,7 @@ if (isset($_POST['usermsg'])) {
       <input type="hidden" name="acao" value="chat">
       <input type="hidden" name="id" value="<?=$id?>">
       <input type="hidden" name="sala" value="<?=$sala?>">
-      <input name="usermsg" type="text" placeholder="Escreva alguma coisa..." id="mensagem" autocomplete="off" onclick="scrollBottom()" autofocus/>
+      <input name="usermsg" type="text" placeholder="Escreva alguma coisa..." id="mensagem" autocomplete="off" autofocus/>
       <input type="submit" id="submitmsg"/>
     </form>
   </div>

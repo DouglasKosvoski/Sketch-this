@@ -31,11 +31,12 @@ function selectAvatar(id) {
   document.getElementById('selectedAvatar').src = image;
 }
 
-//rola para o fim da coversa quando o usuário clica no chat
-function scrollBottom() {
-  var objDiv = document.getElementById("hist");
-  objDiv.scrollTop = objDiv.scrollHeight;
-}
+//rola para o fim da coversa quando a página carrega
+document.addEventListener('DOMContentLoaded', function scrollBottom() {
+    var objDiv = document.getElementById("hist");
+    objDiv.scrollTop = objDiv.scrollHeight;
+}, false);
+
 
 //Não se se essa função vai ser utilizada, mas deixei aqui por conveniência, se for usar, tem que alterar o nome, dá conflito com outra função 
 // function selectAvatar(){
