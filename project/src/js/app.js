@@ -30,17 +30,10 @@ function avatares(){
 //muda o avatar
 function selectAvatar(id) {
   var image = document.getElementById(id).src;
-  document.getElementById('selectedAvatar').src = image;
-
   var hiddeninput = document.getElementById("avatar");
+  document.getElementById('selectedAvatar').src = image;
   hiddeninput.value = image.slice(-5, -4);
 }
-
-//rola para o fim da coversa quando a página carrega
-document.addEventListener('DOMContentLoaded', function scrollBottom() {
-  var objDiv = document.getElementById("hist");
-  objDiv.scrollTop = objDiv.scrollHeight;
-}, false);
 
 function updateQuery() {
   const searchInput = document.getElementById("mensagem");
@@ -62,18 +55,35 @@ function updateQuery() {
   })
 }
 
+document.addEventListener('DOMContentLoaded', function scrollBottom() {
+  url = new URL(window.location.href);
+  if (url.searchParams.get('acao') == 'chat') {
+    var objDiv = document.getElementById("hist");
+    objDiv.scrollTop = objDiv.scrollHeight;
+  }
+}, false);
+
 window.onload = function() {
-  const params = new URLSearchParams(window.location.search);
-  document.getElementById('mensagem').value = params.get('text');
+  url = new URL(window.location.href);
+  if (url.searchParams.get('acao') == 'chat') {
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('mensagem').value = params.get('text');
+  }
 }
 
 window.ready = function(){
-  selectAvatar("../img/avatares/a.png");
+  url = new URL(window.location.href);
+  if (url.searchParams.get('acao') == 'cadastro') {
+    selectAvatar("../img/avatares/a.png");
+  }
 }
 
 setInterval(function () {
-  const params = new URLSearchParams(window.location.search);
-  params.set('text', document.getElementById('mensagem').value);
-  window.location.search = params.toString();
-  window.location.href = window.location.href;
+  url = new URL(window.location.href);
+  if (url.searchParams.get('acao') == 'chat') {
+    const params = new URLSearchParams(window.location.search);
+    params.set('text', document.getElementById('mensagem').value);
+    window.location.search = params.toString();
+    window.location.href = window.location.href;
+  }
 }, 4000);
