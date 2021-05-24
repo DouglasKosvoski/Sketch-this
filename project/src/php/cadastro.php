@@ -28,9 +28,9 @@ else { ?>
 
 
     <div class="avatar" onclick="avatares()">
-      <img id="selectedAvatar" src="../img/avatares/a.png" value="a">
+      <img id="selectedAvatar" src="../img/avatares/a.png">
 
-      <div class="img-avatar-wrapper" id="avat">
+      <div class="img-avatar-wrapper" id="avat" style="display: none;">
         <?php $dir = "../img/avatares/";
         $images = glob($dir."*.png");
         foreach($images as $image) {

@@ -14,13 +14,6 @@ function popUp(id){
   else {
     ballon[0].style.display = 'none';
   }
-  // var ballon = document.getElementById('popup'+id);
-  // if (ballon.style.display === 'none'){
-  //   ballon.style.display = 'flex';
-  // }
-  // else {
-  //   ballon.style.display = 'none';
-  // }
 }
 
 //expande o menu de avatares
@@ -29,8 +22,9 @@ function avatares(){
   if (avatar.style.display === 'none'){
     avatar.style.display = 'block';
   }
-  else
-  avatar.style.display = 'none';
+  else {
+    avatar.style.display = 'none';
+  }
 }
 
 //muda o avatar
@@ -47,4 +41,8 @@ function selectAvatar(id) {
 function scrollBottom() {
   var objDiv = document.getElementById("hist");
   objDiv.scrollTop = objDiv.scrollHeight;
+}
+
+window.onload = function(){
+  selectAvatar("../img/avatares/a.png");
 }
