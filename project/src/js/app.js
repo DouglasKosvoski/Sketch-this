@@ -86,4 +86,4 @@ setInterval(function () {
     window.location.search = params.toString();
     window.location.href = window.location.href;
   }
-}, 4000);
+}, 10000);

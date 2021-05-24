@@ -3,7 +3,7 @@ $id = isset($_GET['id']) ? $_GET['id'] : "";
 $sala = isset($_GET['sala']) ? $_GET['sala'] : "";
 
 if (isset($_POST['usermsg'])) {
-  if ($id == "None") {
+  if ($id == "None" || $id == "") {
     ?><script type="text/javascript">window.location.href = './main.php?acao=login';</script><?php
   }
 
@@ -43,7 +43,7 @@ function show_popup($temp) {
       <input type="hidden" name="acao" value="chat">
       <input type="hidden" name="id" value="<?=$id?>">
       <input type="hidden" name="sala" value="<?=$sala?>">
-      <input name="usermsg" type="text" placeholder="Escreva alguma coisa..." id="mensagem" autocomplete="off" onclick="scrollBottom()" onchange="updateQuery()" onkeypress="updateQuery()" autofocus/>
+      <input name="usermsg" type="text" placeholder="Escreva alguma coisa..." id="mensagem" autocomplete="off" onchange="updateQuery()" onkeypress="updateQuery()" autofocus/>
       <input type="submit" id="submitmsg"/>
     </form>
   </div>
