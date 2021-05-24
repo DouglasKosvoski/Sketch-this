@@ -6,13 +6,14 @@ function mute() {
   //sound goes none
 }
 
-function popUp(){
-  var ballon = document.getElementById('popup');
-  if (ballon.style.display === 'none'){
-    ballon.style.display = 'flex';
+function popUp(id){
+  var ballon = document.getElementsByName('popup'+id);
+  if (ballon[0].style.display === 'none'){
+    ballon[0].style.display = 'flex';
   }
-  else
-  ballon.style.display = 'none';
+  else {
+    ballon[0].style.display = 'none';
+  }
 }
 
 //expande o menu de avatares
@@ -21,14 +22,19 @@ function avatares(){
   if (avatar.style.display === 'none'){
     avatar.style.display = 'block';
   }
-  else
-  avatar.style.display = 'none';
+  else {
+    avatar.style.display = 'none';
+  }
 }
 
 //muda o avatar
 function selectAvatar(id) {
   var image = document.getElementById(id).src;
   document.getElementById('selectedAvatar').src = image;
+
+  var hiddeninput = document.getElementById("avatar");
+  hiddeninput.value = image.slice(-5, -4);
+
 }
 
 //rola para o fim da coversa quando a página carrega
@@ -38,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function scrollBottom() {
 }, false);
 
 
-//Não se se essa função vai ser utilizada, mas deixei aqui por conveniência, se for usar, tem que alterar o nome, dá conflito com outra função 
-// function selectAvatar(){
-//   var avatarImg = document.getElementById('avat');
-// } 
+window.onload = function(){
+  selectAvatar("../img/avatares/a.png");
+}

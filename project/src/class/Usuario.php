@@ -5,6 +5,7 @@ class Usuario {
   private $nick;
   private $email;
   private $senha;
+  private $avatar;
   private $musica;
 
   public function getId(){
@@ -39,6 +40,13 @@ class Usuario {
     return $this->$musica;
   }
   public function setMusica($musica){
-    $this->$musica = $musica;
+    $this->musica = $musica;
+  }
+
+  public function getAvatar(){
+    return $this->avatar;
+  }
+  public function setAvatar($avatar){
+    $this->avatar = $avatar;
   }
 } ?>

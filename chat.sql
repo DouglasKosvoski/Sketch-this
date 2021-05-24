@@ -1,20 +1,9 @@
-DROP DATABASE IF EXISTS 3838844_chat;
-
-CREATE DATABASE chat DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-
-USE chat;
-
-DROP USER IF EXISTS 'admchat'@'localhost';
-
-CREATE USER 'admchat'@'localhost' IDENTIFIED BY '12345';
-
-GRANT SELECT, INSERT, UPDATE, DELETE ON chat.* TO 'admchat'@'localhost';
-
 CREATE TABLE usuario (
   codigo INTEGER AUTO_INCREMENT PRIMARY KEY,
   nick VARCHAR(50) NOT NULL,
   email VARCHAR(50) NOT NULL,
   senha VARCHAR(72) NOT NULL,
+  avatar VARCHAR(72) NOT NULL,
   musica BOOLEAN NOT NULL);
 
 CREATE TABLE reputacao (
@@ -40,7 +29,7 @@ CREATE TABLE mensagem (
 
 -- cria salas default
 INSERT INTO sala values (NULL, 5, 0, "Aleatorio", "Sala para jogar coversa fora.");
-INSERT INTO sala values (NULL, 5, 0, "Segredos", "Quer desabafar e não tem ninguém para quem falar? agora tem.");
+INSERT INTO sala values (NULL, 3, 0, "Segredos", "Quer desabafar e não tem ninguém para quem falar? agora tem.");
 INSERT INTO sala values (NULL, 5, 0, "Conselhos", "Precisando de um conselho? as vezes um olhar estrangeiro para a situação pode ser bom.");
-INSERT INTO sala values (NULL, 5, 0, "Pergunte algo", "Perguntas sem objetivo aparente.");
-INSERT INTO sala values (NULL, 5, 0, "Ajuda", "Precisando de ajuda? talvez alguém aqui possa te ajudar.");
+INSERT INTO sala values (NULL, 7, 0, "Pergunte algo", "Perguntas sem objetivo aparente.");
+INSERT INTO sala values (NULL, 6, 0, "Ajuda", "Precisando de ajuda? talvez alguém aqui possa te ajudar.");
