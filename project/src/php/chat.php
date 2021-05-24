@@ -26,10 +26,9 @@ function show_popup($temp) {
     </div>
   </div>
   <?php
-}
-?>
-
+}?>
 <body>
+
   <header>
     <a href="./main.php?acao=salas&id=<?=$id?>"><img src="../img/Voltar.svg" id="voltar"></a>
     <?php include "./php/include/mute.php"; ?>
@@ -40,7 +39,7 @@ function show_popup($temp) {
       <input type="hidden" name="acao" value="chat">
       <input type="hidden" name="id" value="<?=$id?>">
       <input type="hidden" name="sala" value="<?=$sala?>">
-      <input name="usermsg" type="text" placeholder="Escreva alguma coisa..." id="mensagem" autocomplete="off" autofocus/>
+      <input name="usermsg" type="text" placeholder="Escreva alguma coisa..." id="mensagem" autocomplete="off" onclick="scrollBottom()" onchange="updateQuery()" onkeypress="updateQuery()" autofocus/>
       <input type="submit" id="submitmsg"/>
     </form>
   </div>
@@ -80,10 +79,6 @@ function show_popup($temp) {
           <?php
         }
       }
-    }
-    ?>
-
+    }?>
   </div>
-
-
 </body>
