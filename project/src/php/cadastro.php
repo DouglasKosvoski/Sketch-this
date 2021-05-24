@@ -28,7 +28,7 @@ else { ?>
 
 
     <div class="avatar" onclick="avatares()">
-      <img id="selectedAvatar" src="../img/avatares/a.png">
+      <img id="selectedAvatar" src="../img/avatares/a.png" value="a">
 
       <div class="img-avatar-wrapper" id="avat">
         <?php $dir = "../img/avatares/";

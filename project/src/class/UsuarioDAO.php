@@ -20,6 +20,18 @@ class UsuarioDAO {
     }
   }
 
+  public function userFromId($id) {
+    try {
+      $query = $this->connection->prepare("select * from usuario where codigo=:c");
+      $query->bindValue(":c", $id);
+      $query->execute();
+      return $query->fetchAll(PDO::FETCH_CLASS, "Usuario");
+    }
+    catch (PDOException $e){
+      echo "Erro no acesso aos dados: ". $e->getMessage();
+    }
+  }
+
   public function cadastrar(Usuario $user) {
     try {
       $query = $this->connection->prepare("insert into usuario values (null, :n, :e, :s, :a, 0); insert into reputacao values ((select codigo from usuario where email=:e), 0);");
