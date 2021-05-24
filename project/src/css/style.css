@@ -162,12 +162,12 @@ li {
 
 #popup {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30%;
+  width: max(25%, 200px);
   height: 15%;
   border-radius: 90px;
   background-color: #071E21;
@@ -175,7 +175,8 @@ li {
 }
 
 .popUp {
-  margin-left: 33%;
+  margin-left: 50%;
+  transform: translate(-50%, 0px);
   align-items: center;
   row-gap: 10px;
   column-gap: 10px;
@@ -353,7 +354,8 @@ li {
   transform: translate(50%, 0px);
   padding: 5% 0 15% 0;
 }
-#selectedAvatar{
+
+#selectedAvatar {
   width: 85%;
   position: absolute;
   right: 50%;
@@ -365,6 +367,7 @@ li {
   font-size: 64px;
   width: 700px;
 }
+
 #login_invalido {
   color: tomato;
   font-size: 2rem;
@@ -374,6 +377,7 @@ li {
   position: fixed;
   text-align: center;
 }
+
 .termos {
   position: fixed;
   color: white;
@@ -682,19 +686,16 @@ li {
   }
   #popup {
     display: none;
-    position: absolute;
     z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
     height: 15%;
     border-radius: 90px;
     background-color: #071E21;
     border: 15px #010F14 solid;
   }
   .popUp {
-    margin-left: 0;
     align-items: center;
     row-gap: 10px;
     column-gap: 10px;
@@ -708,7 +709,7 @@ li {
     font-size: 6.5vw;
   }
   #login_invalido {
-    color:tomato;
+    color: tomato;
     font-size: min(18px, 5vw);
   }
   #voltar {
