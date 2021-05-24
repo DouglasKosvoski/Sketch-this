@@ -29,6 +29,10 @@ function avatares(){
 function selectAvatar(id) {
   var image = document.getElementById(id).src;
   document.getElementById('selectedAvatar').src = image;
+
+  var hiddeninput = document.getElementById("avatar");
+  hiddeninput.value = image.slice(-5, -4);
+
 }
 
 //rola para o fim da coversa quando o usuário clica no chat
@@ -37,7 +41,7 @@ function scrollBottom() {
   objDiv.scrollTop = objDiv.scrollHeight;
 }
 
-//Não se se essa função vai ser utilizada, mas deixei aqui por conveniência, se for usar, tem que alterar o nome, dá conflito com outra função 
+//Não se se essa função vai ser utilizada, mas deixei aqui por conveniência, se for usar, tem que alterar o nome, dá conflito com outra função
 // function selectAvatar(){
 //   var avatarImg = document.getElementById('avat');
-// } 
+// }
