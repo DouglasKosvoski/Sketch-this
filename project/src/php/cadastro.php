@@ -47,7 +47,7 @@ else { ?>
       <input type="hidden" name="avatar" id="avatar" value="">
       <input type="nick" name="nick_field" size="37" maxlength="50" placeholder="Nickname" id="id_nick" class="campo-nickname" autocomplete="off" required>
       <input type="email" name="email_field" size="37" maxlength="50" placeholder="E-mail" id="id_email" class="campo-email" autocomplete="off" required>
-      <input type="password" name="password_field" size="37" maxlength="45" placeholder="Senha" id="password" class="campo-senha" required>
+      <input type="password" name="password_field" minlength="6" size="37" maxlength="45" placeholder="Senha" id="password" class="campo-senha" required>
       <input type="submit" value="Cadastrar" class="entrar">
     </form>
 

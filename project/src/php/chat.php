@@ -3,6 +3,10 @@ $id = isset($_GET['id']) ? $_GET['id'] : "";
 $sala = isset($_GET['sala']) ? $_GET['sala'] : "";
 
 if (isset($_POST['usermsg'])) {
+  if ($id == "None") {
+    ?><script type="text/javascript">window.location.href = './main.php?acao=login';</script><?php
+  }
+
   require_once './class/MensagemDAO.php';
   $txt = $_POST['usermsg'];
   $msgDAO = new MensagemDAO();

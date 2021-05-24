@@ -75,5 +75,5 @@ setInterval(function () {
   const params = new URLSearchParams(window.location.search);
   params.set('text', document.getElementById('mensagem').value);
   window.location.search = params.toString();
-  window.location.reload();
-}, 7000);
+  window.location.href = window.location.href;
+}, 4000);
