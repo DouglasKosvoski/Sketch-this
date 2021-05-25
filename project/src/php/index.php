@@ -4,7 +4,7 @@
       Nome do aplicativo/Logomarca
     </div>
   </header>
-  
+
   <main>
     <div id="intro">
       Um chat para você conversar com estranhos, não precisa se sentir culpado, apenas respeite os outros.
@@ -19,7 +19,7 @@
         </a>
       </li>
       <li>
-        <a href="./main.php?acao=bisbilhotar">
+        <a href="./main.php?acao=salas">
           <img src="../img/Bisbilhotar.svg" id="teste">
         </a>
       </li>
