@@ -1,6 +1,6 @@
 <head>
     <title>Projeto Integrador</title>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="Site feito para o projeto integrador ENG. SOFT/BD/PROG II.">
     <meta name="keywords" content="Chat, Conversa, Anônimo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
